@@ -10,7 +10,8 @@ a {
     transition: all 0.4s ease;
     font-weight: 700;
 }
-h3{
+
+h3 {
     font-weight: 800px;
 }
 
@@ -37,6 +38,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .col-12 {
     padding: 30px;
 }
@@ -45,9 +47,11 @@ section {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
+
 .collapse img {
     margin-left: 350px;
 }
+
 .nav-link {
     padding: 14px 22px;
     margin: 10px;
@@ -57,7 +61,13 @@ section {
     border-color: rgb(203, 203, 238);
     background-color: rgb(158, 12, 12);
 }
-.nav-link:hover{
+
+.active{
+    background-color: rgb(14, 14, 95);
+}
+
+.nav-link:hover {
+    background-color: rgb(14, 14, 95);
     transform: translateY(-5px);
 }
 
@@ -66,18 +76,60 @@ section {
     justify-content: center;
     align-items: center;
 }
-.carousel{
+
+.carousel {
     margin-left: 20px;
     margin-right: 20px;
 }
-.spacer{
-    height: 400px;
+
+.carousel-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
 
-footer{
+.carousel-caption {
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    color: #fff;
+  }
+  
+  .carousel-item:hover .carousel-caption {
+    opacity: 1;
+  }
+  
+.more {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.button {
+    padding: 14px 22px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: rgb(158, 12, 12);
+    border-radius: 100px;
+    border: ridge;
+    font-weight: 600;
+    color: #fff;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: rgb(14, 14, 95);
+    transform: translateY(-5px);
+}
+
+.spacer {
+    height: 300px;
+}
+
+footer {
     background: rgb(14, 14, 95);
 }
-.text-uppercase{
+
+.text-uppercase {
     color: rgb(158, 12, 12);
-    font-weight: 500px, !important;
+    font-weight: 500px,  !important;
 }
