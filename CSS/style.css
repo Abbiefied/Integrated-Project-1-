@@ -1,21 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: "Roboto", sans-serif;
-    line-height: 1.8;
-}
-
-a {
-    text-decoration: none;
-    transition: all 0.4s ease;
-    font-weight: 700;
 }
 
 h3 {
     font-weight: 800px;
 }
 
-section {
+#home {
     padding-top: 80px;
     padding-bottom: 80px;
     margin-top: 50px;
@@ -41,7 +36,15 @@ section {
 
 .col-12 {
     padding: 30px;
+    line-height: 1.8;
 }
+
+nav a{
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 700;
+} 
+
 
 .navbar {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
@@ -82,20 +85,33 @@ section {
     margin-right: 20px;
 }
 
+.carousel-content{
+        position: relative;
+        text-align: center;
+        color: white;
+}
+
 .carousel-item img {
     height: 300px;
     width: 100%;
     object-fit: cover;
 }
 
-.carousel-caption {
+.carousel-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.806);
+    width: 100%;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
     color: #fff;
+    border-radius: 10px;
   }
   
-  .carousel-item:hover .carousel-caption {
+  .carousel-content:hover .carousel-text {
     opacity: 1;
   }
   
@@ -122,14 +138,37 @@ section {
 }
 
 .spacer {
-    height: 300px;
+    height: 700px;
 }
 
 footer {
     background: rgb(14, 14, 95);
 }
-
+ 
 .text-uppercase {
     color: rgb(158, 12, 12);
     font-weight: 500px,  !important;
+}
+
+.back-to-top{
+    background-color: rgba(255, 255, 255, 0.7);
+    position:fixed;
+    left:0px;
+    bottom: 50px;
+    z-index: 100;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.back-to-top:hover{
+    background-color: #fff;
+    box-shadow: 5px 10px 25px #555;
+}
+.back-to-top i{
+    color:rgb(158, 12, 12);
+    font-size: 50px;
+    padding: 5px;
+}
+.back-to-top i:hover{
+    font-size: 50px;
+    padding: 5px;
 }
