@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./CSS/style.css">
-  <title>Home Page</title>
+  <title>About Page</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!--Main CSS-->
+  <link rel="stylesheet" href="../CSS/about.css">
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -31,19 +32,19 @@
   <!--navbar-->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="./Images/5.1.gif" alt="logo" style="width:100px; height:80px;"></a>
+      <a class="navbar-brand" href="#"><img src="../Images/5.1.gif" alt="logo" style="width:100px; height:80px;"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <img src="./Images/imageedit_5_3098366752.png" alt="heading" style="width:150px; height:80px;">
+        <img src="../Images/imageedit_5_3098366752.png" alt="heading" style="width:150px; height:80px;">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+            <a class="nav-link text-white" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="./HTML/about.html">About</a>
+            <a class="nav-link text-white active" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
@@ -75,107 +76,179 @@
       </div>
     </div>
   </nav>
+  <!--navbar ends here-->
 
-  <section id="home" class="bg-cover hero-section" style="background-image: url('/Images/bulb1.jpg');">
-    <div class="container text-white text-center">
-      <div class="overlay"></div>
-      <div class="row">
-        <div class="col-12">
-          <h3>We are Bold!<br>
-            We are Strong!<br>
-            We are Phenomenal!<br></h3>
-          <p>Get to know us and relive our journey</p>
+  <!--About section starts-->
+  <!--section 1-->
+  <section class="steps container-custom">
+    <h1 class="section-title">Our Te<span>a</span>m</h1>
+    <div class="row">
+      <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+        <img src="../Images/Ganiyat1.JPG" class="img-fluid pb-4 steps_section-thumbnail" width="553" height="746"
+          loading="lazy">
+      </div>
+
+      <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+        <div class="steps_content-width">
+          <h1 class="h2 mb-4">Ganiyat Abiola Adekunle</h1>
+          <p class="mb-4">Ganiyat Adekunle is a young focused leader, who consciously and unconsciously inspires people
+            around her.
+            She is currently pursuing a degree in Computing (Software Engineering) at the African Leadership University
+            (Mauritius).
+            Ganiyat, through her critical thinking, sees a future where the education system is improved through the use
+            of technology
+            allowing students to relate the knowledge they acquire within the four walls of the school to solve
+            real-life problems. </p>
+          <p> She is always charged towards taking up challenges and overcoming adversities. Ganiyat is also a proactive
+            and strong advocate
+            of SDG 4 (Quality Education), SDG 9(Industry, Innovation, and Infrastructure), and SDG 10 (Reduced
+            Inequalities).
+            She believes every child deserves a quality education and the world needs more critical thinkers and
+            problem-solvers than ordinary earners.</p>
+          <a href="ganiyat.html" class="btn btn-secondary">Read Story</a>
         </div>
       </div>
     </div>
-
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      </div>
-
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col">
-              <div class="carousel-content"><img src="./Images/Esther.jpeg" alt="Esther" class="d-block">
-                <div class="carousel-text d-none d-md-block">
-                  <h5>Funke Aderoju</h5>
-                  <p>Computing - Y2</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="carousel-content"><img src="./Images/Ganiyat1.JPG" alt="Ganiyat" class="d-block">
-                <div class="carousel-text d-none d-md-block">
-                  <h5>Ganiyat Adekunle</h5>
-                  <p>Computing - Y2</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="carousel-content"><img src="./Images/Yvette.jpeg" alt="Yvette" class="d-block">
-                <div class="carousel-text d-none d-md-block">
-                  <h5>Yvette Tuyambaze</h5>
-                  <p>Computing - Y2</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <div class="carousel-content"><img src="./Images/Aishat.jpeg" alt="Ayishatu" class="d-block">
-                <div class="carousel-text d-none d-md-block">
-                  <h5>Ayishatu Saeed</h5>
-                  <p>Computing - Y2</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="carousel-content"><img src="./Images/Mary.jpeg" alt="Mary" class="d-block">
-                <div class="carousel-text d-none d-md-block">
-                  <h5>Mary Odeh</h5>
-                  <p>Computing - Y2</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="carousel-content"><img src="./Images/Christie1.jpeg" alt="Christiana" class="d-block">
-                <div class="carousel-text d-none d-md-block">
-                  <h5>Christiana Ola</h5>
-                  <p>Computing - Y2</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Left and right controls/icons -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-
-    <div class="more"><a href="#" class="button text-white">Read our stories here</a></div>
-
-    <div class="spacer"></div>
   </section>
-  <div id="map">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14987.188935223026!2d57.564611549999995!3d-20.10076125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5522a5ca9c1f%3A0x3bdb9ec034be93fa!2sAfrican%20Leadership%20Campus!5e0!3m2!1sen!2smu!4v1645133167844!5m2!1sen!2smu"
-      width="1260" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </div>
+  <!--end section 1-->
 
+  <!--section 2-->
+  <section class="steps steps--background">
+
+    <div class="container-custom">
+
+      <div class="row">
+        <div class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1">
+          <img src="../Images/Chris pic.jpg" class="img-fluid pb-4 steps_section-thumbnail" width="553" height="746"
+            loading="lazy">
+        </div>
+
+        <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+          <div class="steps_content-width">
+            <h1 class="h2 mb-4">Christiana Ola</h1>
+            <p class="mb-4">Hi, I'm Christiana Oluwabunmi Ola is an aspiring Cyberspace Security Professional, an
+              Entrepreneur and an Ambassador of the Apinke Girls Initiative.
+              She is a Computing student at the African Leadership College, Mauritius. Christiana is a Nigerian by
+              nationality and orginally from Oyo state.
+              she resides with her family in Ijegun, Lagos state. She is the last child of a family of seven and the
+              only daughter.</p>
+            <a href="chris.html" class="btn btn-secondary">Read Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section 2-->
+
+  <!--section 3-->
+  <section class="steps container-custom">
+    <div class="row">
+      <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+        <img src="../Images/Esther.jpg" class="img-fluid pb-4 steps_section-thumbnail" width="553" height="746"
+          loading="lazy">
+      </div>
+
+      <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+        <div class="steps_content-width">
+          <h1 class="h2 mb-4">Funke Esther</h1>
+          <p class="mb-4">Funke Aderoju is my name, and I was born and raised in Nigeria.
+            I am a second-year student majoring in computing.
+            My interests include cooking, blogging, and making stuff for the internet.</p>
+          <a href="esther.html" class="btn btn-secondary">Read Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section 3-->
+
+
+  <!--section 4-->
+  <section class="steps steps--background">
+
+    <div class="container-custom">
+
+      <div class="row">
+        <div class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1">
+          <img src="../Images/Mary Odeh.jpeg" class="img-fluid pb-4 steps_section-thumbnail" width="553" height="746"
+            loading="lazy">
+        </div>
+
+        <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+          <div class="steps_content-width">
+            <h1 class="h2 mb-4">Mary Odeh</h1>
+            <p class="mb-4">
+
+              My name is Mary Odeh, I am currently a second year undergraduate student studying Computing at African
+              Leadership college.
+              I am particularly interested in physical computing, and would love to specialize in software engineering,
+              which focuses on
+              user-centered design processes to solve problems using new technologies and systems.</p>
+            <a href="mary.html" class="btn btn-secondary">Read Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section 4-->
+
+  <!--section 5-->
+  <section class="steps container-custom">
+    <div class="row">
+      <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+        <img src="../Images/Yveete.jpg" class="img-fluid pb-4 steps_section-thumbnail" width="553" height="746"
+          loading="lazy">
+      </div>
+
+      <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+        <div class="steps_content-width">
+          <h1 class="h2 mb-4">Yvette Tuyambaze </h1>
+          <p class="mb-4">I am a self-initiative and motivated problem-solver with experience in website development.
+            Currently pursuing an
+            honors degree in Computing. Passionate about technology, helping others, providing excellent customer
+            service,
+            and enhancing the reputation of the community; eager to learn and contribute to team success.
+          </p>
+          <a href="yvette.html" class="btn btn-secondary">Read Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section 5-->
+
+
+  <!--section 6-->
+  <section class="steps steps--background">
+
+    <div class="container-custom">
+
+      <div class="row">
+        <div class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1">
+          <img src="../Images/Ayi.jpg" class="img-fluid pb-4 steps_section-thumbnail" width="553" height="746"
+            loading="lazy">
+        </div>
+
+        <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+          <div class="steps_content-width">
+            <h1 class="h2 mb-4">Ayishatu Saeed</h1>
+            <p class="mb-4">Ayishatu Saeed is an African Leadership College second-year computing student who has taken
+              relevant courses such as
+              Web Development, Database Development, and Network Technology courses. Interested in CyberSecurity, web
+              design and entrepreneurship.
+              She is a Ghanaian who's is currently staying in Mauritus undergoing her undergraduate studies.</p>
+            <p>Ayishatu Saeed is passionate about technological innovation and thinks it will change people's
+              perceptions of women in technology.</p>
+            <a href="ayishatu.html" class="btn btn-secondary">Read Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section 6-->
+
+  <!--About section End-->
+
+
+  <!--footer starts here-->
   <footer class="text-white" style="background-color: rgb(9, 9, 67);">
 
     <div class="fcontainer text-center text-md-left">
@@ -295,13 +368,10 @@
 
   <div id="topbtn" class="back-to-top">
     <a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
-
   </div>
 
-  <!--Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <!--Bootsrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     topBtn = document.getElementById("topbtn");
     var myScrollFunc = function () {
@@ -314,7 +384,6 @@
     };
     window.addEventListener("scroll", myScrollFunc);
   </script>
-
 </body>
 
 </html>
