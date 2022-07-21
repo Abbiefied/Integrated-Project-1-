@@ -39,11 +39,11 @@ h3 {
     line-height: 1.8;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     transition: all 0.4s ease;
     font-weight: 700;
-} 
+}
 
 
 .navbar {
@@ -56,7 +56,6 @@ nav a{
 }
 
 .nav-link {
-    padding: 14px 22px;
     margin: 10px;
     transition: all 0.3s ease;
     border-style: ridge;
@@ -65,7 +64,7 @@ nav a{
     background-color: rgb(158, 12, 12);
 }
 
-.active{
+.active {
     background-color: rgb(14, 14, 95);
 }
 
@@ -85,10 +84,10 @@ nav a{
     margin-right: 20px;
 }
 
-.carousel-content{
-        position: relative;
-        text-align: center;
-        color: white;
+.carousel-content {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .carousel-item img {
@@ -109,12 +108,12 @@ nav a{
     transition: all 0.4s;
     color: #fff;
     border-radius: 10px;
-  }
-  
-  .carousel-content:hover .carousel-text {
+}
+
+.carousel-content:hover .carousel-text {
     opacity: 1;
-  }
-  
+}
+
 .more {
     text-align: center;
     padding-top: 40px;
@@ -144,31 +143,44 @@ nav a{
 footer {
     background: rgb(14, 14, 95);
 }
- 
+
 .text-uppercase {
     color: rgb(158, 12, 12);
     font-weight: 500px,  !important;
 }
 
-.back-to-top{
+.back-to-top {
     background-color: rgba(255, 255, 255, 0.7);
-    position:fixed;
-    left:0px;
+    position: fixed;
+    display: none;
+    left: 0px;
     bottom: 50px;
     z-index: 100;
     border: 2px solid #fff;
     border-radius: 10px;
 }
-.back-to-top:hover{
+
+.back-to-top:hover {
     background-color: #fff;
     box-shadow: 5px 10px 25px #555;
 }
-.back-to-top i{
-    color:rgb(158, 12, 12);
+
+.back-to-top i {
+    color: rgb(158, 12, 12);
     font-size: 50px;
     padding: 5px;
 }
-.back-to-top i:hover{
+
+.back-to-top i:hover {
     font-size: 50px;
     padding: 5px;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    display: block;
 }
