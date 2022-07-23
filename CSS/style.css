@@ -181,6 +181,10 @@ footer {
     opacity: 0;
 }
 
+.container{
+display: block;
+}
+
 .show {
     opacity: 1;
     display: block;
