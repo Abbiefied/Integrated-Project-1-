@@ -177,6 +177,10 @@ footer {
     padding: 5px;
 }
 
+.hide {
+    opacity: 0;
+}
+
 .show {
     opacity: 1;
     display: block;
