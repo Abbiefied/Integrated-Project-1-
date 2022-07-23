@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Poppins:wght@200;300&family=Work+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Work+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(255, 255, 255, 0.881);
+}
+
+/* header starts here*/
+.navbar a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 700;
+}
+.navbar h3{
+    font-weight: 800px;
+}
+.navbar {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    background-color:#fff;
+}
+header .collapse .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .nav-link {
+    padding: 5px 22px;
+    margin-inline: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(158, 12, 12);
+}
+header .nav-link:hover{
+    transform: translateY(-5px);
+}
+header .text-uppercase{
+    color: rgb(158, 12, 12);
+    font-weight: 500px, !important;
+}
+/**header ends here**/
+
+/**intro section starts here**/
+#intro{
+	background-image: url("../images/ganiyat/ganiyat.JPG");
+	background-repeat: no-repeat;
+	background-size: cover !important;
+	height: 140vh; width: 100%;
+	background-position: 50% .9%;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+	top: 0; right: 0; left:0;
+	display: flex;
+	z-index: 1;
+    margin-bottom: 84.48px;
+}
+
+#intro .container-fluid{
+	font-family: 'Work Sans', sans-serif;
+    color: #fff; 
+    overflow: hidden;
+}
+
+#intro .text{
+    width: 40%;
+    position: absolute;
+    bottom: 30px;
+    margin-left: 60px;
+}
+
+#intro .container-fluid .text h1{
+	font-size: 50px;
+    font-weight: 600;
+}
+
+#intro .container-fluid .text h5{
+	word-spacing: 30px;
+}
+/**intro section ends here**/
+
+/**arrow styles starts here**/
+.arrow{
+    margin-left: 50%; margin-right: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll 2s infinite;
+}
+
+.arrow span:nth-child(2){
+    animation-delay: -.2s;
+}
+
+.arrow span:nth-child(3){
+    animation-delay: -.4s;
+}
+
+@keyframes scroll{
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+          opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+/**arrow styles ends here**/
+
+/**icons styles starts here**/
+.icons{
+    position: absolute;
+     right: 120px;
+}     
+.icons ul{
+    list-style: none;
+}
+.icons a{
+		color: rgb(51, 58, 158);
+		border: 1px solid rgb(51, 58, 158);
+		width: 30px;
+		height: 30px;
+		display: block;
+		text-align: center;
+		border-radius: 50% 50%;
+		padding: 2px;
+        margin-bottom: 10px;
+}
+/**icons styles ends here**/
+
+/**content-wrapper styles ends here**/
+.content-wrapper{
+    padding: 100px 102.4px;
+    justify-content: center;
+    width: 100%;
+}
+.content-wrapper .row{
+    width: 100%;
+}
+
+.content-wrapper .row #col2 div {
+    margin-top: 8pc;
+    margin-left: 30px;
+    width: 80%;
+}
+
+/*.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}*/
+
+
+/* The element to apply the animation to */
+.content-wrapper .row #col1 img{
+    margin-left: 60px;
+    animation-timing-function: ease-out;
+    position: relative;
+    animation:  xaml 3s;
+}
+
+.content-wrapper .row h3{
+    font-family: 'Gentium Book Plus', serif;
+    font-weight: 500;
+    font-size: 41px;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    text-align: left;
+}
+
+.content-wrapper .row p{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .02em;
+    text-transform: none;
+    text-align: justify;
+    word-spacing: 2px;
+}
+/**content-wrapper styles ends here**/
+
+/**header-text section starts here**/
+#header-text{
+    color:#333;
+    height: 70vh;
+}
+
+#header-text h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    padding: 80px 0 40px 50px; 
+    position: relative;
+}
+#header-text h3::after{
+    content: "";
+    border-bottom: 4px solid rgb(85, 83, 83);
+    display: block;
+    width: 80px;
+    margin-left: 48.2%; margin-right: 50%;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0; left: 0; right:0
+}
+/**header-text section ends here**/
+
+/** sidemenu starts here**/
+#vertical-menu{
+    height: auto;
+    --top-offset: 10px;
+    margin-bottom: 300px;
+    width: 100%;
+}
+#vertical-menu .side{
+      opacity: 1;
+      position: absolute;
+      font-size: 40px;
+      right: 80px;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      margin-top: 20px;
+}
+
+.sidemenu{
+    list-style: none;
+    padding-top: 50px;  
+    padding-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-right: 0.6px solid;
+    height: 90vh;
+}
+
+
+.sidemenu a{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .4px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1.4rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #333;
+    --opacity: 1;
+    --subtitle-opacity: 0.5;
+    --transition-delay-stagger: 5ms;
+    cursor: pointer;
+}
+
+.sidemenu li.active {
+     color: blue !important;
+}
+.sidemenu li:hover{
+    background-color: beige;
+}
+.menu-item_title-container{
+    height: 85vh;
+    width: 35%;
+}
+
+.menu-item_index{
+    font-size: .625rem;
+    letter-spacing: .00625rem;
+    color: #333;
+    transition: all .3s cubic-bezier(.215,.61,.355,1);
+    opacity: var(--subtitle-opacity);
+}
+
+.menu-item_title{
+    vertical-align: middle;
+    text-align: left;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    transition: color .6s cubic-bezier(.215,.61,.355,1);
+    opacity: var(--opacity)
+}
+
+
+.sidemenu .border-bottom{
+    width: 360px;
+}
+
+#vertical-menu ul{
+    padding-left: 4rem;
+}
+
+#vertical-menu .container-fluid{
+    display: flex;
+    padding: 0 100px 0 0;
+}
+
+#vertical-menu .content{
+    padding-top: 50px;
+    width: 80%;
+    word-wrap: break-word;
+}
+#vertical-menu .content li{
+    display: none;
+    padding-left: 10px;
+    padding-right: 80px;
+    text-align: justify;
+}
+#vertical-menu .content li.active{
+    display: block;
+}
+
+.sidemenu li ul.sub-menu {
+    display: none;
+}
+
+#background p{
+    margin-top: 3rem;
+    font-family: 'Raleway', sans-serif;
+    width: 85%;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+ 
+#alu p {
+    margin-top: 3rem;
+    font-family: 'Raleway', sans-serif;
+    width: 85%;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+ 
+#experience p {
+    margin-top: 3rem;
+    font-family: 'Raleway', sans-serif;
+    width: 85%;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+#social p {
+    margin-top: 3rem;
+    font-family: 'Raleway', sans-serif;
+    width: 85%;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+#ideas p {
+    margin-top: 3rem;
+    font-family: 'Raleway', sans-serif;
+    width: 85%;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+@media screen and (max-width: 720px) {
+    #vertical-menu .sidemenu{
+         padding-left: 5px;
+    }
+}
+@media screen and (max-width: 576px) {
+    #vertical-menu .container-fluid{
+        flex-direction: column;
+    }
+}
+
+/**sidemenu ends here**/
