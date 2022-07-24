@@ -1,0 +1,130 @@
+h3{
+    font-weight: 800px;
+}
+/*nav  section starts here*/
+nav a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 700;
+  }
+  
+  
+  .navbar {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .collapse img {
+    margin-left: 350px;
+  }
+  
+  .nav-link {
+    margin: 10px;
+    transition: all 0.3s ease;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: rgb(203, 203, 238);
+    background-color: rgb(158, 12, 12);
+  }
+  
+  .active {
+    background-color: rgb(14, 14, 95);
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(14, 14, 95);
+    transform: translateY(-5px);
+  }
+footer{
+    margin-top: 100px;
+    background: rgb(14, 14, 95);
+}
+.text-uppercase{
+    color: rgb(158, 12, 12);
+    font-weight: 500px, !important;
+}
+p.text-center{
+    color:rgb(4, 4, 130);
+    margin-top: 150px;
+}
+.paragraph{
+    background-color: hsla(74, 59%, 81%, 0.3);
+}
+.paragraph1{
+    color: blue;
+    font-weight: bold;
+    background-color: hsla(74, 59%, 81%, 0.3);
+}
+.description {
+	margin-top: 50px;
+    text-align: center;
+    color:rgb(34, 4, 134);
+}
+
+.description p {
+	color: black;
+    text-align: center;
+	
+}
+.description button{
+    margin-bottom: 500px;
+}
+
+.rounded-float-start{
+    margin-left: 15px;
+    border-radius: 30%;
+}
+.rounded-float-end{
+    margin-left: 30px;
+    border-radius: 30%;
+}
+.card-group{
+    box-sizing: border-box;
+}
+
+/*footer starts here*/
+footer {
+    background: rgb(14, 14, 95);
+  }
+  
+  .text-uppercase {
+    color: rgb(158, 12, 12);
+    font-weight: 500px,  !important;
+  }
+  
+  .back-to-top {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    display: none;
+    left: 0px;
+    bottom: 50px;
+    z-index: 100;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  .back-to-top:hover {
+    background-color: #fff;
+    box-shadow: 5px 10px 25px #555;
+  }
+  
+  .back-to-top i {
+    color: rgb(158, 12, 12);
+    font-size: 50px;
+    padding: 5px;
+  }
+  
+  .back-to-top i:hover {
+    font-size: 50px;
+    padding: 5px;
+  }
+  
+  .hide {
+    opacity: 0;
+  }
+  
+  .show {
+    opacity: 1;
+    display: block;
+  }
