@@ -12,36 +12,46 @@ body{
     background: transparent !important;
 }
 
-/* header starts here*/
-.navbar a {
+/*nav  section starts here*/
+nav a {
     text-decoration: none;
     transition: all 0.4s ease;
     font-weight: 700;
-}
-.navbar h3{
-    font-weight: 800px;
-}
-.navbar {
+  }
+
+  .navbar {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
-    background-color:#fff;
-}
+    background-color: #fff;
+  }
+  
+  nav .collapse img {
+    margin-left: 350px;
+  }
+  
+  .nav-link {
+    margin: 10px;
+    transition: all 0.3s ease;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: rgb(203, 203, 238);
+    background-color: rgb(158, 12, 12);
+  }
+  
+  nav .active {
+    background-color: rgb(14, 14, 95);
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(14, 14, 95);
+    transform: translateY(-5px);
+  }
+/*navbar ends here*/
+
+/* header starts here*/
 header .collapse .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-header .nav-link {
-    padding: 5px 22px;
-    margin-inline: 10px;
-    margin-top: 10px;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    text-align: center;
-    background-color: rgb(158, 12, 12);
-}
-header .nav-link:hover{
-    transform: translateY(-5px);
 }
 header .text-uppercase{
     color: rgb(158, 12, 12);
@@ -235,7 +245,7 @@ header .text-uppercase{
 }
 /**header-text section ends here**/
 
-//** sidemenu starts here**/
+/** sidemenu starts here**/
 #vertical-menu{
     height: auto;
     --top-offset: 10px;
@@ -393,3 +403,50 @@ header .text-uppercase{
 }
 
 /**sidemenu ends here**/
+
+/*footer starts here*/
+footer {
+    background: rgb(14, 14, 95);
+  }
+  
+  .text-uppercase {
+    color: rgb(158, 12, 12);
+    font-weight: 500px,  !important;
+  }
+  
+  .back-to-top {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    display: none;
+    left: 0px;
+    bottom: 50px;
+    z-index: 100;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  .back-to-top:hover {
+    background-color: #fff;
+    box-shadow: 5px 10px 25px #555;
+  }
+  
+  .back-to-top i {
+    color: rgb(158, 12, 12);
+    font-size: 50px;
+    padding: 5px;
+  }
+  
+  .back-to-top i:hover {
+    font-size: 50px;
+    padding: 5px;
+  }
+  
+  .hide {
+    opacity: 0;
+  }
+  
+  .show {
+    opacity: 1;
+    display: block;
+  }
