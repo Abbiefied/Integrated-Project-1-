@@ -62,6 +62,7 @@ p.text-center{
 .description p {
 	color: black;
     text-align: justify;
+    padding: 70px;
 	
 }
 .description button{
