@@ -61,7 +61,7 @@ header .text-uppercase{
 
 /**intro section starts here**/
 #intro{
-	background-image: url("../images/yvette/img3.jpg");
+	background-image: url("../Images/img3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover !important;
 	height: 140vh; width: 100%;
