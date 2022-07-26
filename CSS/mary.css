@@ -62,7 +62,7 @@ header .text-uppercase{
 
 /**intro section starts here**/
 #intro{
-	background-image: url("../images/mary/May.jpeg");
+	background-image: url("../Images/May.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover !important;
 	height: 140vh; width: 100%;
