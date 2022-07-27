@@ -140,6 +140,10 @@ nav a {
     height: 400px;
 }
 
+.map-responsive {
+    overflow: hidden;
+}
+
 footer {
     background: rgb(14, 14, 95);
 }
