@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
     <title>Contact Page</title>
+    
   </head>
   <body>
     
@@ -33,23 +34,23 @@
             <a class="nav-link text-white" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
               Our Stories
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="Ayishatu Saeed.html">Ayishatu Saeed</a></li>
-              <li><a class="dropdown-item" href="Christiana Ola.html">Christiana Ola</a></li>
+              <li><a class="dropdown-item" href="./ayishat.html">Ayishatu Saeed</a></li>
+              <li><a class="dropdown-item" href="./christiana.html">Christiana Ola</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="Funke Aderoju.html">Funke Aderoju</a></li>
-              <li><a class="dropdown-item" href="Ganiyat Adekunle.html">Ganiyat Adekunle</a></li>
+              <li><a class="dropdown-item" href="./funke.html">Funke Aderoju</a></li>
+              <li><a class="dropdown-item" href="./ganiyat.html">Ganiyat Adekunle</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="Mary odeh.html">Mary Odeh</a></li>
-              <li><a class="dropdown-item" href="Yvette Tuyambaze.html">Yvette Tuyambaze</a></li>
+              <li><a class="dropdown-item" href="./mary.html">Mary Odeh</a></li>
+              <li><a class="dropdown-item" href="./yvette.html">Yvette Tuyambaze</a></li>
             </ul>
             <li class="nav-item">
               <a class="nav-link text-white" href="alu.html">Alu</a>
@@ -102,7 +103,7 @@
         </div>
       </div>
       <div class="col-md-6 mx-auto" data-aos="fade-up">
-        <form method="POST" action="PHP/ContactUs.php">
+        <form id="webForm px-5">
           <div class="row mb-2">
             <div class="col-2"><label for="name">Name:</label></div>
             <div class="col"><input type="name" name="name" required></div>
@@ -127,11 +128,11 @@
               <br>
           </div>
           <div class="row mb-2">
-            <div class="col"><label for="name">Message:</label><textarea name="Message" rows="5" cols="40"></textarea></div>
+            <div class="col"><label for="name">Message:</label><textarea name="Message" rows="5"></textarea></div>
             
           </div>
           <div class="row">
-            <button class="btn btn-lg w-100 btn-danger btn-block mt-3">Submit</button>
+            <input type="submit" class="btn btn-lg w-100 btn-danger btn-block mt-3" value="submit" id="submit">
           </div>
           <br><br>
          
@@ -244,6 +245,16 @@
   
 </footer>
 
-     
+<script>
+  document.getElementById('webForm').addEventListener('submit', validateField)
+
+  function validateField(){
+    const inputs = document.getElementsByTagName('input')
+    console.log(inputs)
+    if (inputs){
+      alert('Thank You! Your Message Has Been Received')
+    }
+  }
+</script>  
   </body>
 </html>

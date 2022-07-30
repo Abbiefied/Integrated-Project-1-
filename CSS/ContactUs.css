@@ -8,8 +8,8 @@
 
 body {
 	height: 80vh;
-	display: grid;
 	font-family: 'Poppins', sans-serif;
+    width: 100vw;
 }
 
 .collapse img{
@@ -17,7 +17,7 @@ body {
 }
 
 .contact-in {
-    width: 100%;
+    width: 100vw;
     
 }
 
@@ -33,6 +33,7 @@ h3{
 .navbar {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    width: 100vw;
 }
 .nav-link {
     padding: 14px 20px;
@@ -56,7 +57,7 @@ footer{
 }
 
 .main{
-     width: 100%;
+     width: 100vw;
 }
 
 a{
@@ -107,7 +108,7 @@ background-size: cover;
 
 }  
     footer{
-        width: 100%;
+        width: 100vw;
     }
 
 .contact__us {
@@ -117,7 +118,7 @@ background-size: cover;
    
   }
   .contact-in iframe{
-    width: 100%;
+    width: 100vw;
   }
 
   .contact-in{
@@ -125,4 +126,15 @@ background-size: cover;
   }
   .container{
     font-family:'Times New Roman', Times, serif;
+    width: 100vw;
+  }
+  #webForm{
+    width: 100vw;
+  }
+
+  @media (max-width: 760px) {
+    body{
+        overflow-x: hidden;
+    }
+   
   }
