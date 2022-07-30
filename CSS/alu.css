@@ -73,6 +73,7 @@ p.text-center{
     margin-left: 15px;
     border-radius: 30%;
 }
+
 .rounded-float-end{
     margin-left: 30px;
     border-radius: 30%;
@@ -127,3 +128,28 @@ footer {
     opacity: 1;
     display: block;
   }
+ 
+/*media queries starts here */
+  @media only screen and (max-width: 500px) {
+    
+    .rounded-float-start{
+      width: 90%;
+      margin-left:10px;
+    }
+    .rounded-float-end{
+      width: 90%;
+      margin-left: 10px;
+      margin-top: 25px;
+    }
+    .description p {
+      color: black;
+        text-align: justify;
+        padding: 10px;
+    }
+    .paragraph{
+      background-color: hsla(74, 59%, 81%, 0.3);
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  }  
+/* media queries ends here*/  
