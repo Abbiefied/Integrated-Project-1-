@@ -39,48 +39,22 @@ footer{
     margin-top: 100px;
     background: rgb(14, 14, 95);
 }
-.text-uppercase{
-    color: rgb(158, 12, 12);
-    font-weight: 500px, !important;
-}
-p.text-center{
-    color:rgb(4, 4, 130);
-    margin-top: 150px;
-}
-.paragraph{
-    background-color: hsla(74, 59%, 81%, 0.3);
-    margin-left: 100px;
-    margin-right: 100px;
-}
 
-.description {
-	margin-top: 50px;
-    text-align: center;
-    color:rgb(34, 4, 134);
-}
 
-.description p {
-	color: black;
-    text-align: justify;
-    padding: 70px;
-	
-}
-.description button{
-    margin-bottom: 500px;
-}
 
-.rounded-float-start{
-    margin-left: 15px;
-    border-radius: 30%;
-}
 
-.rounded-float-end{
-    margin-left: 30px;
-    border-radius: 30%;
-}
-.card-group{
-    box-sizing: border-box;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*footer starts here*/
 footer {
@@ -129,27 +103,3 @@ footer {
     display: block;
   }
  
-/*media queries starts here */
-  @media only screen and (max-width: 500px) {
-    
-    .rounded-float-start{
-      width: 90%;
-      margin-left:10px;
-    }
-    .rounded-float-end{
-      width: 90%;
-      margin-left: 10px;
-      margin-top: 25px;
-    }
-    .description p {
-      color: black;
-        text-align: justify;
-        padding: 10px;
-    }
-    .paragraph{
-      background-color: hsla(74, 59%, 81%, 0.3);
-      margin-left: 10px;
-      margin-right: 10px;
-  }
-  }  
-/* media queries ends here*/  
