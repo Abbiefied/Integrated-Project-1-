@@ -76,8 +76,9 @@ header .text-uppercase{
     background-position: 50% 30%;
 }
 #introchristiana{
-	background-image: url("../Images/IMG-20220327-WA0080.jpg");
-    background-position: 50% 30%;
+	background-image: url("../Images/crisoal.jpeg");
+    background-position: 50% 35%;
+    background-color: rgba(0,0,0,0.4);
 }
 #introfunke{
     background-image: url("../images/funke1.jpg");
@@ -178,7 +179,7 @@ header .text-uppercase{
 
 /**content-wrapper styles ends here**/
 .content-wrapper{
-    padding: 100px 102.4px;
+    padding: 100px 102.4px 50px 102.4px;
     justify-content: center;
     width: 100%;
 }
@@ -284,15 +285,17 @@ header .text-uppercase{
 /**header-text section starts here**/
 #header-text{
     color:#333;
-    height: 50vh;
+    height: 60vh;
 }
 
 #header-text h3{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 40px;
-    padding: 80px 0 40px 50px; 
+    padding: 150px 0 30px 0; 
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 #header-text h3::after{
     content: "";
@@ -304,6 +307,7 @@ header .text-uppercase{
     position: absolute;
     bottom: 0; left: 0; right:0
 }
+
 /**header-text section ends here**/
 
 /** sidemenu starts here**/
@@ -311,6 +315,8 @@ header .text-uppercase{
     height: auto;
     --top-offset: 10px;
     width: 100%;
+    background: #f4f4f4;
+    color: #333;
 }
 #vertical-menu .side{
       opacity: 1;
@@ -323,8 +329,8 @@ header .text-uppercase{
 }
 
 .sidemenu{
-    list-style: none;
-    padding-top: 50px;  
+    padding-top: 120px;
+    list-style: none; 
     padding-bottom: 28px;
     display: flex;
     flex-direction: column;
@@ -385,6 +391,7 @@ header .text-uppercase{
 
 .sidemenu .border-bottom{
     width: 360px;
+    border-bottom: 0.6px solid #333 !important;
 }
 
 #vertical-menu ul{
@@ -398,10 +405,11 @@ header .text-uppercase{
 }
 
 #vertical-menu .content{
-    padding-top: 50px;
+    padding-top: 80px;
     width: 85%;
     word-wrap: break-word;
     height: 200vh;
+    overflow-y: scroll;
 }
 #vertical-menu .content li{
     display: none;
