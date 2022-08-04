@@ -41,7 +41,7 @@ footer{
     background: rgb(14, 14, 95);
 }
 
-/*content starts here*/
+/*background image starts here*/
 .header {
  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/graduate\ pic.jpg);
  width: 100%;
@@ -141,7 +141,7 @@ h1{
 .background-color a{
   margin-left: 45%;
   margin-top: 5%;
-  border: 5px solid rgb(81, 40, 194);
+  border: 5px solid rgb(15, 4, 44);
   border-radius: 20px;
 
 }
