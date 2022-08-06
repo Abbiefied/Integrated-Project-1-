@@ -112,7 +112,7 @@ h1{
 /*contents starts here*/
 .background-color{
   background-color: #DBF9FC;
-  height:700px;
+  height:800px;
   margin-bottom: -100px;
 }
 .description h2{
@@ -121,7 +121,9 @@ h1{
   font-size: 1.9rem;
 	font-weight: 700;
 }
-
+.description p{
+  text-align: justify;
+}
 .feature-title {
   padding-top: 50px;
 	font-size: 1.3rem;
@@ -141,7 +143,7 @@ h1{
 .background-color a{
   margin-left: 45%;
   margin-top: 5%;
-  border: 5px solid rgb(78, 76, 77);
+  border: 5px solid rgb(132, 25, 6);
   border-radius: 20px;
 
 }
@@ -198,7 +200,7 @@ h1{
   }
   .background-color{
     background-color: #DBF9FC;
-    height: 1550px;;
+    height: 1650px;;
   }
   .row {
     padding-right: 20%;
