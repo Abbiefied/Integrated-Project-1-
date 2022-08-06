@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 80vh;
+	font-family: 'Poppins', sans-serif;
+    width: 100vw;
+}
+
+.collapse img{
+    margin-left: 250px;
+}
+
+.contact-in {
+    width: 100vw;
+    
+}
+
+.contact-in:nth-child(1) {
+	flex: 30%;
+	background: url(images/images/1.jpg);
+	color: #fff;
+}
+
+h3{
+    font-weight: 800px;
+}
+
+textarea{
+    margin-left: 8rem;
+}
+
+.navbar {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100vw;
+}
+.nav-link {
+    padding: 14px 20px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: rgb(203, 203, 238);
+    background-color: rgb(158, 12, 12);
+}
+.nav-link:hover{
+    transform: translateY(-5px);
+}
+footer{
+    background: rgb(14, 14, 95);
+   
+}
+.text-uppercase{
+    color: rgb(158, 12, 12);
+    font-weight: 500px, !important;
+}
+
+.main{
+     width: 100vw;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+ul{
+    margin: 0px;    
+}
+
+ul li{
+    float: left;
+    padding: 0px 15px;
+    list-style: none;
+}
+ul li a:hover{
+    color: red;
+}
+.header{
+    background-image: url("../Images/Images/ALC\ Contact.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+background-size: cover;
+   height: 100vh;
+   
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 60px;
+    font-family:' serif';
+    font-weight: 20;
+   
+}  
+
+.content p{
+    padding: 0px 50px;
+    font-size: 16px;
+
+}  
+    footer{
+        width: 100vw;
+    }
+
+.contact__us {
+    font-size: 21px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(14, 14, 95);
+   
+  }
+  .contact-in iframe{
+    width: 100vw;
+  }
+
+  .contact-in{
+    margin: 0;
+  }
+  .container{
+    font-family:'Times New Roman', Times, serif;
+    width: 100vw;
+  }
+  #webForm{
+    width: 100vw;
+  }
+
+  @media (max-width: 760px) {
+    body{
+        overflow-x: hidden;
+    }
+   
+  }
+
+  form {
+    border: 3px solid brown;
+    border-radius: 1rem;
+    padding: 2rem 0 0 6rem;
+    margin-bottom: 2rem;
+  }
+
+  #submit {
+    width: 10rem;
+    margin-left: 8rem;
+  }
