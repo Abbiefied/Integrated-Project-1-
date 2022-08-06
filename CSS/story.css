@@ -10,7 +10,7 @@
 
 body{
     background: rgba(255, 255, 255, 0.881);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /*nav  section starts here*/
@@ -97,6 +97,7 @@ header .text-uppercase{
 	display: flex;
 	z-index: 1;
     margin-bottom: 84.48px;
+    overflow-x: hidden;
 }
 
 .intro .container-fluid{
@@ -182,6 +183,7 @@ header .text-uppercase{
     padding: 100px 102.4px 50px 102.4px;
     justify-content: center;
     width: 100%;
+    overflow-x: hidden;
 }
 .content-wrapper .row{
     width: 100%;
@@ -196,9 +198,8 @@ header .text-uppercase{
 /* The element to apply the animation to */
 .content-wrapper .row #col1 img{
     margin-left: 60px;
-    animation-timing-function: ease-out;
     position: relative;
-    animation:  xaml 3s;
+    height: 37rem;
 }
 
 .content-wrapper .row h3{
@@ -266,12 +267,6 @@ header .text-uppercase{
 }
 /**content-wrapper styles ends here**/
 
-
-/* The animation code */
-@keyframes xaml {
-    from {left: 0px;}
-    to {left: 40px;}
-}
 
 /* The element to apply the animation to */
 .content-wrapper-ayi .row #col1 img{
@@ -459,6 +454,7 @@ header .text-uppercase{
     word-spacing: 5px;
 }
 
+
 /**sidemenu ends here**/
 
 /** contact styles starts here**/
@@ -466,6 +462,8 @@ header .text-uppercase{
     margin-top: 200px;
     margin-bottom: 100px;
     padding: 0 60px 0 60px;
+    overflow-x: hidden;
+    width: 100%;
 }
 #contact .vertical{
       opacity: 1;
@@ -533,7 +531,7 @@ header .text-uppercase{
 #contact h2{
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 200;
 }
 /** contact styles ends here**/
@@ -551,13 +549,13 @@ header .text-uppercase{
 
 }
 .icons ul li a{
-		width: 60px;
-        height: 60px;
+		width: 50px;
+        height: 50px;
         display: block;
         text-align: center;
         margin: 0 10px;
         border-radius: 50%;
-        padding: 6px;
+        padding: 4px;
         text-decoration: none;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
         background: linear-gradient(0deg, #ddd, #fff);
@@ -573,26 +571,137 @@ header .text-uppercase{
     background: linear-gradient(0deg, #fff, #ddd);
     border-radius: 50%;
     line-height: calc(60px - 12px);
-    font-size: 24px;
+    font-size: 20px;
     color: #262626;
     transition: .5s;
 }
-.icons ul li:nth-child(1) a:hover .fa{
+.icons ul li:nth-child(1) .fa{
     color: #3b5998;
 }
-.icons ul li:nth-child(2) a:hover .fa{
+.icons ul li:nth-child(2) .fa{
     color: #00aced;
 }
-.icons ul li:nth-child(3) a:hover .fa{
+.icons ul li:nth-child(3) .fa{
     color: #e4405f;
 }
-.icons ul li:nth-child(4) a:hover .fa{
+.icons ul li:nth-child(4) .fa{
     color: #007bb6;
 }
-.icons ul li:nth-child(5) a:hover .fa{
+.icons ul li:nth-child(5).fa{
     color: #dd4b39;
 }
 /**icons styles ends here**/
+
+@media (max-width: 768px) {
+    .intro .container-fluid .text{
+        margin-left: 20px;
+    }
+    .intro .container-fluid .text h1{
+        font-size: 40px;
+    }
+    .intro .container-fluid .text h5{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1250px) and (min-width: 991px) {
+    .content-wrapper{
+          padding: 100px 50px 50px 50px;
+    }
+    .content-wrapper .row #col1 img{
+        margin-left: 0;
+    }
+    .content-wrapper .row #col2 div {
+        margin-top: 7pc;
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 890px){
+    .content-wrapper{
+        padding: 100px 50px 50px 50px;
+    }
+    .content-wrapper .row>*{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content-wrapper .container{
+        margin: 0;
+        padding: 0;
+    }
+    .content-wrapper .row #col1 img{
+        height: 35rem;
+        margin-left: 0;
+    }
+    .content-wrapper .row {
+        margin: 0;
+    }
+    .content-wrapper .row #col2 div {
+        margin-top: 4pc;
+        width: 90%;
+        margin-left: 80px;
+    }
+}
+@media (max-width: 889px) and (min-width: 760px){
+    .content-wrapper{
+        padding: 100px 30px 50px 30px;
+    }
+    .content-wrapper .row>*{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content-wrapper .container{
+        margin: 0;
+        padding: 0;
+    }
+    .content-wrapper .row #col1 img{
+        height: 30rem;
+        margin-left: 0;
+    }
+    .content-wrapper .row {
+        margin: 0;
+    }
+    .content-wrapper .row #col2 div {
+        margin-top: 1pc;
+        width: 80%;
+        margin-left: 50px;
+    }
+    .content-wrapper .row h3{
+        margin-block-start: 0;
+        margin-block-end: 0.8em;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .content-wrapper{
+        padding: 100px 30px 50px 30px;
+    }
+    .content-wrapper .row>*{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content-wrapper .row #col1 img{
+        margin-left: 35px;
+    }
+    .content-wrapper .row #col2 div {
+        margin-top: 8pc;
+        width: 87%;
+    }
+}
+@media screen and (max-width: 479px){
+    .content-wrapper{
+        padding: 100px 20px 50px 20px;
+    }
+    .content-wrapper .row>*{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content-wrapper .row #col1 img{
+        margin-left: 5px;
+        height: 30rem;
+    }
+}
+
 
 
 
