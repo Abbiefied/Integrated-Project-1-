@@ -30,31 +30,49 @@ body {
 h3{
     font-weight: 800px;
 }
-.navbar {
+/*nav  section starts here*/
+nav a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 700;
+  }
+  
+  
+  .navbar {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    width: 100vw;
-}
-.nav-link {
-    padding: 14px 20px;
+  }
+  
+  .collapse img {
+    margin-left: 350px;
+  }
+  
+  .nav-link {
     margin: 10px;
     transition: all 0.3s ease;
     border-style: ridge;
     border-radius: 10px;
     border-color: rgb(203, 203, 238);
     background-color: rgb(158, 12, 12);
-}
-.nav-link:hover{
+  }
+  
+  .active {
+    background-color: rgb(14, 14, 95);
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(14, 14, 95);
     transform: translateY(-5px);
-}
-footer{
+  }
+/*footer starts here*/
+footer {
     background: rgb(14, 14, 95);
-   
-}
-.text-uppercase{
+  }
+  
+  .text-uppercase {
     color: rgb(158, 12, 12);
-    font-weight: 500px, !important;
-}
+    font-weight: 500px,  !important;
+  }
 
 .main{
      width: 100vw;
