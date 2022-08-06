@@ -1,6 +1,7 @@
-h3{
-    font-weight: 800px;
+body{
+  overflow-x: hidden;
 }
+
 /*nav  section starts here*/
 nav a {
     text-decoration: none;
@@ -39,48 +40,185 @@ footer{
     margin-top: 100px;
     background: rgb(14, 14, 95);
 }
-.text-uppercase{
-    color: rgb(158, 12, 12);
-    font-weight: 500px, !important;
-}
-p.text-center{
-    color:rgb(4, 4, 130);
-    margin-top: 150px;
-}
-.paragraph{
-    background-color: hsla(74, 59%, 81%, 0.3);
-    margin-left: 100px;
-    margin-right: 100px;
+
+/*background image starts here*/
+.header {
+ background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/graduate\ pic.jpg);
+ width: 100%;
+ height: 190vh;
+ background-position: center;
+ background-size: cover;
 }
 
-.description {
-	margin-top: 50px;
-    text-align: center;
-    color:rgb(34, 4, 134);
+.content {
+	left: 50%;
+	position: absolute;
+	top: 40%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.content h1{
+  line-height: 160px;
+  margin-left: -10px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+h1{
+  background: url(../Images/Esther.jpg); 
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  animation: back 20s linear infinite;
 }
 
-.description p {
-	color: black;
-    text-align: justify;
-    padding: 70px;
-	
-}
-.description button{
-    margin-bottom: 500px;
-}
-
+/*image starts here*/
 .rounded-float-start{
-    margin-left: 15px;
-    border-radius: 30%;
+  margin-left: 200px;
+  border-radius: 40%;
+  margin-top: 25%;
+  border: 5px solid #fff;
+  height: 330px;
+  margin-right: 10px;
 }
 
 .rounded-float-end{
-    margin-left: 30px;
-    border-radius: 30%;
+  margin-right: 0px;
+  border-radius: 40%;
+  margin-top: 25%;
+  border: 5px solid #fff;
+  height: 330px;
+
 }
-.card-group{
-    box-sizing: border-box;
+.rounded-float-start1{
+  margin-left: 200px;
+  border-radius: 40%;
+  margin-top: 5px;
+  border: 5px solid #fff;
+  height: 330px;
+  margin-right: 10px;
+  margin-bottom: 290px;
 }
+
+.rounded-float-end2{
+  margin-right: 0px;
+  border-radius: 40%;
+  border: 5px solid #fff;
+  height: 330px;
+  margin-left: 0px;
+  margin-bottom: 290px;
+  margin-top: 5px;
+
+}
+
+/*contents starts here*/
+.background-color{
+  background-color: #DBF9FC;
+  height:700px;
+  margin-bottom: -100px;
+}
+.description h2{
+  padding-top: 50px;
+  text-align: center;
+  font-size: 1.9rem;
+	font-weight: 700;
+}
+
+.feature-title {
+  padding-top: 50px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.features img {
+  margin-left: 30px;
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+/*button starts here*/
+.background-color a{
+  margin-left: 45%;
+  margin-top: 5%;
+  border: 5px solid rgb(15, 4, 44);
+  border-radius: 20px;
+
+}
+
+
+/*keyframes starts here*/
+@keyframes back {
+  
+  100%{background-position: 2000px 0;}
+    
+}
+
+
+/*meia queries starts here*/
+@media only screen and (max-width: 800px) {
+    
+    .content h1 {
+      top: 70%;
+      font-size: 15px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .rounded-float-start{
+    width: 40%;
+    margin-left:23px;
+    margin-top: 65%;
+    height: 200px;
+    margin-right: 0px;
+  }
+  .rounded-float-end{
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 65%;
+    height: 200px;
+
+  }
+  .rounded-float-start1{
+    width: 40%;
+    margin-left:10px;    
+    height: 200px;
+    margin-left:23px;
+    margin-right: 0px;
+
+  }
+  .rounded-float-end2{
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 200px;
+  }
+  .header{
+    height: 150vh;
+  }
+  .background-color{
+    background-color: #DBF9FC;
+    height: 1550px;;
+  }
+  .row {
+    padding-right: 20%;
+  }
+  .background-color a{
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 /*footer starts here*/
 footer {
@@ -129,27 +267,3 @@ footer {
     display: block;
   }
  
-/*media queries starts here */
-  @media only screen and (max-width: 500px) {
-    
-    .rounded-float-start{
-      width: 90%;
-      margin-left:10px;
-    }
-    .rounded-float-end{
-      width: 90%;
-      margin-left: 10px;
-      margin-top: 25px;
-    }
-    .description p {
-      color: black;
-        text-align: justify;
-        padding: 10px;
-    }
-    .paragraph{
-      background-color: hsla(74, 59%, 81%, 0.3);
-      margin-left: 10px;
-      margin-right: 10px;
-  }
-  }  
-/* media queries ends here*/  
