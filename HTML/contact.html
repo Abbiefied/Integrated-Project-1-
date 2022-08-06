@@ -106,11 +106,11 @@
         <form id="webForm px-5">
           <div class="row mb-2">
             <div class="col-2"><label for="name">Name:</label></div>
-            <div class="col"><input type="name" name="name" required></div>
+            <div class="col"><input class="inputs1" type="name" name="name" required></div>
           </div>
           <div class="row mb-2">
             <div class="col-2"><label for="name">Email:</label></div>
-            <div class="col"><input type="email" name="email" required></div>
+            <div class="col"><input class="inputs2" type="email" name="email" required></div>
           </div>
           
           <br>
@@ -118,21 +118,25 @@
             <div class="col-2"><label for="name">Gender:</label></div>
             <div class="col"> <input type="radio" name="gender" value="female"> Female
               <input type="radio" name="gender" value="male"> Male
-            <input type="radio" name="gender" value="other"> Other<div>
+            <input type="radio" name="gender" value="other"> Other</div>
               <br>
           </div>
           
           <div class="row mb-2">
             <div class="col-2"><label for="name">Subject:</label></div>
-            <div class="col"> <input type="text" placeholder="Topic discussion" name="Subject"><div>
+            <div class="col"> <input class="inputs" type="text" placeholder="Topic discussion" name="Subject"></div>
               <br>
           </div>
           <div class="row mb-2">
-            <div class="col"><label for="name">Message:</label><textarea name="Message" rows="5"></textarea></div>
+            <div class="col">
+              <label for="name">Message:</label>
+              <textarea name="Message" rows="5" cols="23"></textarea>
+            </div>
             
           </div>
           <div class="row">
-            <input type="submit" class="btn btn-lg w-100 btn-danger btn-block mt-3" value="submit" id="submit">
+            <!-- <input type="submit" class="btn btn-lg w-100 btn-danger btn-block mt-3" value="submit" id="submit"> -->
+            <button type="submit" class="btn btn-lg btn-danger btn-block mt-3" id="submit">Submit</button>
           </div>
           <br><br>
          
@@ -269,13 +273,11 @@
 <script>
   document.getElementById('webForm').addEventListener('submit', validateField)
 
-  function validateField(){
-    const inputs = document.getElementsByTagName('input')
-    console.log(inputs)
     if (inputs){
-      alert('Thank You! Your Message Has Been Received')
+      return alert('Thank You! Your Message Has Been Received')
     }
-  }
+  
+
 </script>  
   </body>
 </html>
