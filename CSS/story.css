@@ -281,6 +281,7 @@ header .text-uppercase{
 #header-text{
     color:#333;
     height: 60vh;
+    background-color:rgb(215, 195, 195);
 }
 
 #header-text h3{
