@@ -10,10 +10,11 @@ body {
 	height: 80vh;
 	font-family:  "Roboto", sans-serif;
     width: 100vw;
+    
 }
 
 .collapse img{
-    margin-left: 250px;
+    margin-left: 350px;
 }
 
 .contact-in {
@@ -72,6 +73,7 @@ textarea{
 /*footer starts here*/
 footer {
     background: rgb(14, 14, 95);
+    font-family: "roboto", sans-serif;
   }
   
   .text-uppercase {
@@ -107,19 +109,18 @@ background-size: cover;
    height: 100vh;
    
 }
-
-.content fa{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+.page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
 }
-.content h1{
-    font-size: 60px;
-    font-family:' Roboto';
-    font-weight: 20;
-   
+.page h1{
+  font-size: 60px;
+  font-family:'Roboto' ;
+  font-weight: 100;
+  color: rgb(32, 66, 167);
 }  
 
 
@@ -130,18 +131,14 @@ background-size: cover;
 
   .contact-in iframe{
     width: 100vw;
+    overflow-x: hidden;
   }
 
   .contact-in{
     margin: 0;
   }
-  .container{
-    font-family:'Roboto';
-    width: 100vw;
-  }
-  #webForm{
-    width: 100vw;
-  }
+  
+  
 
   @media (max-width: 760px) {
     body{
@@ -150,14 +147,158 @@ background-size: cover;
    
   }
 
-  form {
-    border: 3px solid brown;
-    border-radius: 1rem;
-    padding: 2rem 0 0 6rem;
-    margin-bottom: 2rem;
-  }
 
-  #submit {
-    width: 10rem;
-    margin-left: 8rem;
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+main{
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webform{
+  width: 85%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.webform .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.webform .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: rgb(158, 12, 12);
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.webform .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.webform .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color:rgb(158, 12, 12);
+  
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgb(158, 12, 12);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: rgb(158, 12, 12);
+}
+
+@media (max-width: 950px) {
+  .webform{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
   }
+  .webform .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .webform .content{
+    flex-direction: column-reverse;
+  }
+ .webform .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .webform .content .left-side::before{
+   display: none;
+ }
+ .webform .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+
+
+ 
