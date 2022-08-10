@@ -76,9 +76,9 @@ header .text-uppercase{
     background-position: 50% 30%;
 }
 #introchristiana{
-	background-image: url("../Images/crisoal.jpeg");
-    background-position: 50% 35%;
-    background-color: rgba(0,0,0,0.4);
+	background-image: url("../Images/Crisoal.jpeg");
+    background-position: 50% 40%;
+    background-color: rgba(0,0,0,0.5);
 }
 #introfunke{
     background-image: url("../images/funke1.jpg");
@@ -324,15 +324,14 @@ header .text-uppercase{
 }
 
 .sidemenu{
-    padding-top: 120px;
+    padding-top: 100px;
     list-style: none; 
     padding-bottom: 28px;
     display: flex;
     flex-direction: column;
     flex: 1;
     border-right: 0.6px solid;
-    height: 150vh;
-    
+    height: 100vh;  
 }
 
 
@@ -401,9 +400,10 @@ header .text-uppercase{
 
 #vertical-menu .content{
     padding-top: 80px;
+    padding-bottom: 60px;
     width: 85%;
     word-wrap: break-word;
-    height: 200vh;
+    height: 100vh;
     overflow-y: scroll;
 }
 #vertical-menu .content li{
