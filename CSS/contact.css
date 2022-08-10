@@ -79,9 +79,6 @@ footer {
     font-weight: 500px,  !important;
   }
 
-.main{
-     width: 100vw;
-}
 
 a{
     text-decoration: none;
@@ -125,21 +122,12 @@ background-size: cover;
    
 }  
 
-.content p{
-    padding: 0px 50px;
-    font-size: 16px;
 
-}  
     footer{
         width: 100vw;
     }
 
-.contact__us {
-    font-size: 21px;
-    font-family:'roboto';
-    color: rgb(14, 14, 95);
-   
-  }
+
   .contact-in iframe{
     width: 100vw;
   }
