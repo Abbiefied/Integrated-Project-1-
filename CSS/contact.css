@@ -8,7 +8,7 @@
 
 body {
 	height: 80vh;
-	font-family: 'Poppins', sans-serif;
+	font-family:  "Roboto", sans-serif;
     width: 100vw;
 }
 
@@ -38,7 +38,7 @@ nav a {
   }
   
   
-  
+
 textarea{
     margin-left: 8rem;
 }
@@ -103,7 +103,7 @@ ul li a:hover{
     color: red;
 }
 .header{
-    background-image: url("../Images/Images/ALC\ Contact.jpeg");
+    background-image: url("../Images/Images/IMG_2255.JPG");
     background-position: center;
     background-repeat: no-repeat;
 background-size: cover;
@@ -111,7 +111,7 @@ background-size: cover;
    
 }
 
-.content{
+.content fa{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -120,7 +120,7 @@ background-size: cover;
 }
 .content h1{
     font-size: 60px;
-    font-family:' serif';
+    font-family:' Roboto';
     font-weight: 20;
    
 }  
@@ -136,7 +136,7 @@ background-size: cover;
 
 .contact__us {
     font-size: 21px;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'roboto';
     color: rgb(14, 14, 95);
    
   }
@@ -148,7 +148,7 @@ background-size: cover;
     margin: 0;
   }
   .container{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Roboto';
     width: 100vw;
   }
   #webForm{
