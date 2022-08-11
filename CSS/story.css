@@ -226,48 +226,6 @@ header .text-uppercase{
 }
 /**content-wrapper styles ends here**/
 
-/**content-wrapper starts ends here**/
-.content-wrapper-ayi{
-    padding: 100px 50px;
-    justify-content: center;
-    width: 100%;
-}
-.content-wrapper-ayi .row{
-    width: 100%;
-    margin: 0; padding: 0;
-}
-
-.content-wrapper-ayi .row #col1 div {
-    margin-top: 8pc;
-    margin-left: 30px;
-    width: 80%;
-}
-
-.content-wrapper-ayi.row h3{
-    font-family: 'Gentium Book Plus', serif;
-    font-weight: 500;
-    font-size: 41px;
-    font-style: normal;
-    letter-spacing: 0em;
-    text-transform: none;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    text-align: right;
-}
-
-.content-wrapper-ayi .row p{
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: .02em;
-    text-transform: none;
-    text-align: justify;
-    word-spacing: 2px;
-}
-/**content-wrapper styles ends here**/
-
-
 /* The element to apply the animation to */
 .content-wrapper-ayi .row #col1 img{
     margin-left: 60px;
