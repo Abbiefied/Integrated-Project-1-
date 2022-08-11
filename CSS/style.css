@@ -147,6 +147,7 @@ nav a {
     height: 400px;
     overflow: hidden;
     padding:10px;
+    max-width: 900px;
 }
 
 .embed-responsive-item{
