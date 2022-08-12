@@ -460,7 +460,7 @@ header .text-uppercase{
     }
 }
 
-@media (max-width: 1103px){
+@media (min-width: 889px) and (max-width: 1103px){
     #vertical-menu ul{
         padding-left: 3rem;
     }
@@ -473,12 +473,20 @@ header .text-uppercase{
     .sidemenu .border-bottom{
         width: 220px;
     }
-    .menu-item_title-container{
-       width: 100%;
+    .sidemenu{
+        justify-content: center;
+        padding-top: 100px;
+        list-style: none; 
+        padding-bottom: 28px;
+        display: flex;
+        border-right: 0.6px solid;
+        height: 100vh;
+        width: 100%;
     }
     #vertical-menu .content{
-        overflow-y: none;
+        overflow-y: hidden;
         width: 100%;
+        height: auto;
     }
     #vertical-menu .container-fluid{
         display: block;
