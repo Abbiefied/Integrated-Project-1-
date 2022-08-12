@@ -112,19 +112,6 @@ header .text-uppercase{
     bottom: 30px;
     margin-left: 60px;
 }
-#introayishatu .text{
-    width: 35%;
-    position: absolute;
-    bottom: 50px;
-    right: 30px;
-    text-align: justify;
-
-}
-
-#introayishatu .container-fluid .text h1{
-	font-size: 60px;
-    font-weight: 600;
-}
 .intro .container-fluid .text h1{
 	font-size: 50px;
     font-weight: 600;
