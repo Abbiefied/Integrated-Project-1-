@@ -471,7 +471,7 @@ header .text-uppercase{
 
 @media (max-width: 890px){
     .sidemenu .border-bottom{
-        width: 220px;
+        width: 255px;
     }
     .sidemenu{
         justify-content: center;
@@ -490,6 +490,9 @@ header .text-uppercase{
     }
     #vertical-menu .container-fluid{
         display: block;
+    }
+    .menu-item_title-container{
+        width: 90%;
     }
 }
 
