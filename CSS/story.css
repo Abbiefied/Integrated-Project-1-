@@ -340,6 +340,7 @@ header .text-uppercase{
 #vertical-menu .container-fluid{
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 #vertical-menu .content{
@@ -497,7 +498,7 @@ header .text-uppercase{
         text-align: center;
         margin: 0 10px;
         border-radius: 50%;
-        padding: 4px;
+        padding: 5px;
         text-decoration: none;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
         background: linear-gradient(0deg, #ddd, #fff);
@@ -512,7 +513,7 @@ header .text-uppercase{
     display: block;
     background: linear-gradient(0deg, #fff, #ddd);
     border-radius: 50%;
-    line-height: calc(60px - 12px);
+    line-height: 41px;
     font-size: 20px;
     color: #262626;
     transition: .5s;
@@ -524,7 +525,7 @@ header .text-uppercase{
     color: #00aced;
 }
 .icons ul li:nth-child(3) .fab{
-    color: #e4405f;
+    color: #0d6efd;
 }
 .icons ul li:nth-child(4) .fab{
     color: #007bb6;
@@ -543,105 +544,36 @@ header .text-uppercase{
     }
 }
 
-@media screen and (max-width: 1250px) and (min-width: 991px) {
-    .content-wrapper{
-          padding: 100px 50px 50px 50px;
+@media (max-width: 1270px){
+    .sidemenu .border-bottom{
+        width: 300px;
     }
-    .content-wrapper .row #col1 img{
-        margin-left: 0;
+}
+
+@media (max-width: 1103px){
+    #vertical-menu ul{
+        padding-left: 3rem;
     }
-    .content-wrapper .row #col2 div {
-        margin-top: 7pc;
+    .sidemenu .border-bottom{
+        width: 260px;
+    }
+}
+
+@media (max-width: 890px){
+    .sidemenu .border-bottom{
+        width: 220px;
+    }
+    .menu-item_title-container{
+       width: 100%;
+    }
+    #vertical-menu .content{
+        overflow-y: none;
         width: 100%;
     }
-}
-
-@media (max-width: 991px) and (min-width: 890px){
-    .content-wrapper{
-        padding: 100px 50px 50px 50px;
-    }
-    .content-wrapper .row>*{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .content-wrapper .container{
-        margin: 0;
-        padding: 0;
-    }
-    .content-wrapper .row #col1 img{
-        height: 35rem;
-        margin-left: 0;
-    }
-    .content-wrapper .row {
-        margin: 0;
-    }
-    .content-wrapper .row #col2 div {
-        margin-top: 4pc;
-        width: 90%;
-        margin-left: 80px;
+    #vertical-menu .container-fluid{
+        display: block;
     }
 }
-@media (max-width: 889px) and (min-width: 760px){
-    .content-wrapper{
-        padding: 100px 30px 50px 30px;
-    }
-    .content-wrapper .row>*{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .content-wrapper .container{
-        margin: 0;
-        padding: 0;
-    }
-    .content-wrapper .row #col1 img{
-        height: 30rem;
-        margin-left: 0;
-    }
-    .content-wrapper .row {
-        margin: 0;
-    }
-    .content-wrapper .row #col2 div {
-        margin-top: 1pc;
-        width: 80%;
-        margin-left: 50px;
-    }
-    .content-wrapper .row h3{
-        margin-block-start: 0;
-        margin-block-end: 0.8em;
-    }
-}
-
-@media screen and (max-width: 767px){
-    .content-wrapper{
-        padding: 100px 30px 50px 30px;
-    }
-    .content-wrapper .row>*{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .content-wrapper .row #col1 img{
-        margin-left: 35px;
-    }
-    .content-wrapper .row #col2 div {
-        margin-top: 8pc;
-        width: 87%;
-    }
-}
-@media screen and (max-width: 479px){
-    .content-wrapper{
-        padding: 100px 20px 50px 20px;
-    }
-    .content-wrapper .row>*{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .content-wrapper .row #col1 img{
-        margin-left: 5px;
-        height: 30rem;
-    }
-}
-
-
 
 
 /*footer starts here*/
