@@ -326,7 +326,7 @@ header .text-uppercase{
 
 
 .sidemenu .border-bottom{
-    width: 360px;
+    width: auto;
     border-bottom: 0.6px solid #333 !important;
 }
 
@@ -460,7 +460,7 @@ header .text-uppercase{
     }
 }
 
-@media (min-width: 889px) and (max-width: 1103px){
+@media (min-width: 879px) and (max-width: 1103px){
     #vertical-menu ul{
         padding-left: 3rem;
     }
@@ -469,9 +469,9 @@ header .text-uppercase{
     }
 }
 
-@media (max-width: 890px){
+@media (min-width: 767px) and (max-width: 880px){
     .sidemenu .border-bottom{
-        width: 255px;
+        width: 360px;
     }
     .sidemenu{
         justify-content: center;
@@ -487,12 +487,16 @@ header .text-uppercase{
         overflow-y: hidden;
         width: 100%;
         height: auto;
+        margin-top: 40px;
     }
     #vertical-menu .container-fluid{
         display: block;
     }
     .menu-item_title-container{
-        width: 90%;
+        width: 59%;
+    }
+    #vertical-menu ul{
+        padding-left: 9rem;
     }
 }
 
