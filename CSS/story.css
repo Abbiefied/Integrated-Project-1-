@@ -60,6 +60,9 @@ header .text-uppercase{
 /**header ends here**/
 
 /**intro section starts here**/
+#space1{
+    margin-top: -140px;
+}
 #intromary{
 	background-image: url("../Images/May.jpeg");	
 }
