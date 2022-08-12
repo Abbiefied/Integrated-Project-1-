@@ -254,6 +254,7 @@ header .text-uppercase{
     width: 100%;
     background: #f4f4f4;
     color: #333;
+    margin-bottom: 50px;
 }
 #vertical-menu .side{
       opacity: 1;
