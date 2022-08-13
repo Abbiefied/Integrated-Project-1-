@@ -11,6 +11,10 @@ body{
     overflow-x: hidden !important;
 }
 
+:root{
+    overflow-x:hidden
+    }
+
 /*nav  section starts here*/
 nav a {
     text-decoration: none;
@@ -82,7 +86,7 @@ header .text-uppercase{
     background-color: rgba(0,0,0,0.5);
 }
 #introfunke{
-    background-image: url("../images/funke1.jpg");
+    background-image: url("../Images/funke1.jpg");
     background-position: 50% 70%;
     background-color: rgba(0,0,0,0.6);
 }
