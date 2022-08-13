@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Poppins:wght@200;300&family=Work+Sans:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Work+Sans:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 *{
     margin: 0;
@@ -62,6 +60,9 @@ header .text-uppercase{
 /**header ends here**/
 
 /**intro section starts here**/
+#space1{
+    margin-top: -130px;
+}
 #intromary{
 	background-image: url("../Images/May.jpeg");	
 }
@@ -96,12 +97,11 @@ header .text-uppercase{
 	top: 0; right: 0; left:0;
 	display: flex;
 	z-index: 1;
-    margin-bottom: 84.48px;
+    margin-bottom: 180px;
     overflow-x: hidden;
 }
 
 .intro .container-fluid{
-	font-family: 'Work Sans', sans-serif;
     color: #fff; 
     overflow: hidden;
 }
@@ -111,19 +111,6 @@ header .text-uppercase{
     position: absolute;
     bottom: 30px;
     margin-left: 60px;
-}
-#introayishatu .text{
-    width: 35%;
-    position: absolute;
-    bottom: 50px;
-    right: 30px;
-    text-align: justify;
-
-}
-
-#introayishatu .container-fluid .text h1{
-	font-size: 60px;
-    font-weight: 600;
 }
 .intro .container-fluid .text h1{
 	font-size: 50px;
@@ -203,8 +190,7 @@ header .text-uppercase{
 }
 
 .content-wrapper .row h3{
-    font-family: 'Gentium Book Plus', serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 41px;
     font-style: normal;
     letter-spacing: 0em;
@@ -216,8 +202,6 @@ header .text-uppercase{
 
 .content-wrapper .row p{
     display: block;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
     font-style: normal;
     letter-spacing: .02em;
     text-transform: none;
@@ -238,25 +222,26 @@ header .text-uppercase{
 /**header-text section starts here**/
 #header-text{
     color:#333;
-    height: 60vh;
-    background-color:rgb(215, 195, 195);
+    height: 50vh;
+    background-color: #ddd;
+    justify-content: center;
+    align-items: center;
 }
 
 #header-text h3{
-    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 40px;
-    padding: 150px 0 30px 0; 
+    padding: 140px 0 50px 0; 
     position: relative;
     justify-content: center;
     align-items: center;
 }
 #header-text h3::after{
     content: "";
-    border-bottom: 4px solid rgb(85, 83, 83);
+    border-bottom: 4px solid rgb(158, 12, 12);
     display: block;
     width: 80px;
-    margin-left: 48.2%; margin-right: 50%;
+    margin-left: 46.3%; margin-right: 50%;
     margin-top: 10px;
     position: absolute;
     bottom: 0; left: 0; right:0
@@ -265,12 +250,14 @@ header .text-uppercase{
 /**header-text section ends here**/
 
 /** sidemenu starts here**/
+
 #vertical-menu{
     height: auto;
     --top-offset: 10px;
     width: 100%;
     background: #f4f4f4;
     color: #333;
+    margin-bottom: 50px;
 }
 #vertical-menu .side{
       opacity: 1;
@@ -290,14 +277,14 @@ header .text-uppercase{
     flex-direction: column;
     flex: 1;
     border-right: 0.6px solid;
-    height: 100vh;  
+    height: 100vh;
+    width: 100%;
 }
 
 
 .sidemenu a{
-    font-family: 'Raleway', sans-serif;
     letter-spacing: .4px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     padding: 1.4rem 0 1rem 0;
     display: flex;
@@ -343,7 +330,7 @@ header .text-uppercase{
 
 
 .sidemenu .border-bottom{
-    width: 360px;
+    width: auto;
     border-bottom: 0.6px solid #333 !important;
 }
 
@@ -355,6 +342,7 @@ header .text-uppercase{
 #vertical-menu .container-fluid{
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 #vertical-menu .content{
@@ -377,135 +365,44 @@ header .text-uppercase{
 
 #background p{
     margin-top: 3rem;
-    font-family: 'Raleway', sans-serif;
     width: 85%;
-    font-weight: 600;
     word-spacing: 5px;
 }
  
 #alu p {
     margin-top: 3rem;
-    font-family: 'Raleway', sans-serif;
     width: 85%;
-    font-weight: 600;
     word-spacing: 5px;
 }
  
 #experience p {
     margin-top: 3rem;
-    font-family: 'Raleway', sans-serif;
     width: 85%;
-    font-weight: 600;
     word-spacing: 5px;
 }
 #social p {
     margin-top: 3rem;
-    font-family: 'Raleway', sans-serif;
     width: 85%;
-    font-weight: 600;
     word-spacing: 5px;
 }
 #ideas p {
     margin-top: 3rem;
-    font-family: 'Raleway', sans-serif;
     width: 85%;
-    font-weight: 600;
     word-spacing: 5px;
 }
 
 
 /**sidemenu ends here**/
 
-/** contact styles starts here**/
-#contact .container{
-    margin-top: 200px;
-    margin-bottom: 100px;
-    padding: 0 60px 0 60px;
-    overflow-x: hidden;
-    width: 100%;
-}
-#contact .vertical{
-      opacity: 1;
-      font-size: 30px;
-      color: #000;
-      font-weight: 400;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      margin: 20px 0 30px 0;
-      white-space: nowrap;
-      letter-spacing: 0.1em;
-      margin-right: 0;
-      margin-bottom: 20px;
-      
-}
-
-#contact .border{
-     width: 30px;
-     height: 11rem;
-     background-color: #333;
-     margin-left: 10px;
-}
-
-#contact #f-orm{
-    display: flex;
-    margin-top: 40px;
-    margin-right: 50px;
-}
-
-#contact form{
-    width: 250px;
-    margin-top: 150px;
-    margin-left: 20px;
-    font-family: Calibri;
-}
-
-#contact #gridContainer{
-    display: grid;
-    height: auto;
-    width: 100%;
-    grid-template-rows: repeat(4, min-content) 1fr;
-    grid-template-columns: 100%;
-    min-height: auto;
-    
-}
-
-#contact input{
-    height: 50px;
-}
-
-#contact #texta{
-    padding: 3px 3px 3px 24px;
-    border: 0.8px solid;
-}
-.submit{
-    border: none;
-    background: none;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    font-weight: 200;
-    text-align: right;
-    margin-right: 10px;
-}
-
-#contact h2{
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 200;
-}
-/** contact styles ends here**/
 
 /**icons styles starts here**/
 .icons ul{
-    margin-left: 50%;
-    margin-right: 20%;
-     transform: translate(-50%, -50%);
-     display: flex;
-     
+    margin-left: 38%;
+    margin-right: 50%;
+     display: flex;  
 } 
 .icons ul li{
     list-style: none;
-
 }
 .icons ul li a{
 		width: 50px;
@@ -514,7 +411,7 @@ header .text-uppercase{
         text-align: center;
         margin: 0 10px;
         border-radius: 50%;
-        padding: 4px;
+        padding: 5px;
         text-decoration: none;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
         background: linear-gradient(0deg, #ddd, #fff);
@@ -523,35 +420,36 @@ header .text-uppercase{
 .icons ul li a:hover{
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-.icons ul li a .fa{
+.icons ul li a .fab{
     width: 100%;
     height: 100%;
     display: block;
     background: linear-gradient(0deg, #fff, #ddd);
     border-radius: 50%;
-    line-height: calc(60px - 12px);
+    line-height: 41px;
     font-size: 20px;
     color: #262626;
     transition: .5s;
 }
-.icons ul li:nth-child(1) .fa{
+.icons ul li:nth-child(1) .fab{
     color: #3b5998;
 }
-.icons ul li:nth-child(2) .fa{
-    color: #00aced;
+.icons ul li:nth-child(2) .fab{
+    color: #ed1800;
 }
-.icons ul li:nth-child(3) .fa{
-    color: #e4405f;
+.icons ul li:nth-child(3) .fab{
+    color: #0d6efd;
 }
-.icons ul li:nth-child(4) .fa{
+.icons ul li:nth-child(4) .fab{
     color: #007bb6;
-}
-.icons ul li:nth-child(5).fa{
-    color: #dd4b39;
 }
 /**icons styles ends here**/
 
+/*media query for responsiveness starts here*/
+
 @media (max-width: 768px) {
+    /*for intro class*/
+
     .intro .container-fluid .text{
         margin-left: 20px;
     }
@@ -563,106 +461,147 @@ header .text-uppercase{
     }
 }
 
-@media screen and (max-width: 1250px) and (min-width: 991px) {
+@media (max-width: 1290px) {
     .content-wrapper{
-          padding: 100px 50px 50px 50px;
+        padding: 100px 80px 50px 80px;
     }
     .content-wrapper .row #col1 img{
-        margin-left: 0;
+        margin-left: 20px;
+        height: 30rem;
     }
-    .content-wrapper .row #col2 div {
-        margin-top: 7pc;
-        width: 100%;
+    .content-wrapper .row #col2 div{
+        margin-top: 4pc;
     }
 }
-
-@media (max-width: 991px) and (min-width: 890px){
+@media (max-width: 1090px) {
     .content-wrapper{
         padding: 100px 50px 50px 50px;
     }
-    .content-wrapper .row>*{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .content-wrapper .container{
-        margin: 0;
-        padding: 0;
-    }
     .content-wrapper .row #col1 img{
-        height: 35rem;
         margin-left: 0;
-    }
-    .content-wrapper .row {
-        margin: 0;
-    }
-    .content-wrapper .row #col2 div {
-        margin-top: 4pc;
-        width: 90%;
-        margin-left: 80px;
-    }
-}
-@media (max-width: 889px) and (min-width: 760px){
-    .content-wrapper{
-        padding: 100px 30px 50px 30px;
-    }
-    .content-wrapper .row>*{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .content-wrapper .container{
-        margin: 0;
-        padding: 0;
-    }
-    .content-wrapper .row #col1 img{
         height: 30rem;
-        margin-left: 0;
     }
-    .content-wrapper .row {
-        margin: 0;
-    }
-    .content-wrapper .row #col2 div {
-        margin-top: 1pc;
-        width: 80%;
-        margin-left: 50px;
-    }
-    .content-wrapper .row h3{
-        margin-block-start: 0;
-        margin-block-end: 0.8em;
+    .content-wrapper .row #col2 div{
+        margin-top: 3.5pc;
     }
 }
 
-@media screen and (max-width: 767px){
-    .content-wrapper{
-        padding: 100px 30px 50px 30px;
-    }
-    .content-wrapper .row>*{
-        padding-left: 0;
-        padding-right: 0;
-    }
+@media (max-width: 912px){
     .content-wrapper .row #col1 img{
-        margin-left: 35px;
-    }
-    .content-wrapper .row #col2 div {
-        margin-top: 8pc;
-        width: 87%;
+        margin-left: 0;
+        height: 36rem;
     }
 }
-@media screen and (max-width: 479px){
+
+@media (max-width: 560px) {
+    .content-wrapper{
+        padding: 100px 50px 50px 50px;
+    }
+    .content-wrapper .row #col1 img{
+          height: 27rem;
+    }
+}
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) starts here **********/
+@media (max-width: 490px){
     .content-wrapper{
         padding: 100px 20px 50px 20px;
     }
-    .content-wrapper .row>*{
-        padding-left: 0;
-        padding-right: 0;
-    }
     .content-wrapper .row #col1 img{
-        margin-left: 5px;
-        height: 30rem;
+          height: 21rem;
     }
 }
 
+@media (max-width: 280px){
+    .content-wrapper .row #col1 img{
+        height: 15rem;
+  } 
+}
+/********** Super extra small devices Only :-) (e.g., iPhone 4) ends here **********/
+@media (max-width: 1270px){
+    .sidemenu .border-bottom{
+        width: 300px;
+    }
+}
 
+@media (min-width: 879px) and (max-width: 1103px){
+    #vertical-menu ul{
+        padding-left: 3rem;
+    }
+    .sidemenu .border-bottom{
+        width: 260px;
+    }
+}
 
+@media (max-width: 880px){
+    .sidemenu .border-bottom{
+        width: 400px;
+    }
+    .sidemenu{
+        justify-content: center;
+        list-style: none; 
+        padding-bottom: 28px;
+        display: flex;
+        border-right: 0.6px solid;
+        height: 100vh;
+        width: 100%;
+    }
+    #vertical-menu .content{
+        width: 100%;
+        height: 100vh;
+    }
+    #vertical-menu .container-fluid{
+        display: flex;
+    }
+   
+    #vertical-menu ul{
+        padding-left: 6rem;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 870px){
+    #vertical-menu ul{
+        padding-left: 3rem;
+    } 
+    .sidemenu .border-bottom{
+        width: 200px;
+    }
+    .menu-item_title-container{
+        width: 40%;
+    }
+}
+
+@media (max-width: 740px){
+    .sidemenu .border-bottom{
+        width: 300px;
+    }
+    #vertical-menu .container-fluid{
+        display: block;
+    }
+    #vertical-menu .content{
+        margin-top: 50px;
+        overflow: hidden;
+        height: auto;
+    }
+    .menu-item_title-container{
+        width: 55%;
+    }
+    #vertical-menu ul{
+        padding-left: 6rem;
+    } 
+}
+
+@media (max-width: 546px){
+    .sidemenu .border-bottom{
+        width: 250px;
+    }
+    #vertical-menu ul{
+        padding-left: 4rem;
+    } 
+    .menu-item_title-container{
+        width: 79%;
+    }
+}
+/*media query for responsiveness ends here*/
 
 /*footer starts here*/
 footer {
