@@ -9,12 +9,9 @@
 body {
 	height: 80vh;
 	font-family:  "Roboto", sans-serif;
-    width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
     
-}
-
-.collapse img{
-    margin-left: 350px;
 }
 
 .contact-in {
@@ -28,79 +25,41 @@ body {
 	color: #fff;
 }
 
-h3{
-    font-weight: 800px;
-}
 /*nav  section starts here*/
 nav a {
-    text-decoration: none;
-    transition: all 0.4s ease;
-    font-weight: 700;
-  }
-  
-  
-
-textarea{
-    margin-left: 8rem;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-weight: 700;
 }
 
 .navbar {
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  .collapse img {
-    margin-left: 350px;
-  }
-  
-  .nav-link {
-    margin: 10px;
-    transition: all 0.3s ease;
-    border-style: ridge;
-    border-radius: 10px;
-    border-color: rgb(203, 203, 238);
-    background-color: rgb(158, 12, 12);
-  }
-  
-  .active {
-    background-color: rgb(14, 14, 95);
-  }
-  
-  .nav-link:hover {
-    background-color: rgb(14, 14, 95);
-    transform: translateY(-5px);
-  }
-/*footer starts here*/
-footer {
-    background: rgb(14, 14, 95);
-    font-family: "roboto", sans-serif;
-  }
-  
-  .text-uppercase {
-    color: rgb(158, 12, 12);
-    font-weight: 500px,  !important;
-  }
-
-
-a{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 20px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-
-ul{
-    margin: 0px;    
+nav .collapse img {
+  margin-left: 350px;
 }
 
-ul li{
-    float: left;
-    padding: 0px 15px;
-    list-style: none;
+.nav-link {
+  margin: 10px;
+  transition: all 0.3s ease;
+  border-style: ridge;
+  border-radius: 10px;
+  border-color: rgb(203, 203, 238);
+  background-color: rgb(158, 12, 12);
 }
-ul li a:hover{
-    color: red;
+
+nav .active {
+  background-color: rgb(14, 14, 95);
 }
+
+.nav-link:hover {
+  background-color: rgb(14, 14, 95);
+  transform: translateY(-5px);
+}
+/*navbar ends here*/
+
 .header{
     background-image: url("../Images/Images/IMG_2255.JPG");
     background-position: center;
@@ -123,12 +82,6 @@ background-size: cover;
   color: rgb(32, 66, 167);
 }  
 
-
-    footer{
-        width: 100vw;
-    }
-
-
   .contact-in iframe{
     width: 100vw;
     overflow-x: hidden;
@@ -138,8 +91,6 @@ background-size: cover;
     margin: 0;
   }
   
-  
-
   @media (max-width: 760px) {
     body{
         overflow-x: hidden;
@@ -147,11 +98,8 @@ background-size: cover;
    
   }
 
-
 /* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-
 
 main{
   min-height: 100vh;
@@ -299,6 +247,51 @@ main{
  }
 }
 
+/*footer starts here*/
+footer {
+  background: rgb(14, 14, 95);
+}
 
+.text-uppercase {
+  color: rgb(158, 12, 12);
+  font-weight: bold;
+}
+
+.back-to-top {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  display: none;
+  left: 0px;
+  bottom: 50px;
+  z-index: 100;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.back-to-top:hover {
+  background-color: #fff;
+  box-shadow: 5px 10px 25px #555;
+}
+
+.back-to-top i {
+  color: rgb(158, 12, 12);
+  font-size: 50px;
+  padding: 5px;
+}
+
+.back-to-top i:hover {
+  font-size: 50px;
+  padding: 5px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  display: block;
+}
 
  
