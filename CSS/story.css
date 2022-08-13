@@ -97,7 +97,7 @@ header .text-uppercase{
 	top: 0; right: 0; left:0;
 	display: flex;
 	z-index: 1;
-    margin-bottom: 84.48px;
+    margin-bottom: 160px;
     overflow-x: hidden;
 }
 
@@ -222,21 +222,21 @@ header .text-uppercase{
 /**header-text section starts here**/
 #header-text{
     color:#333;
-    height: 60vh;
-    background-color:rgb(215, 195, 195);
+    height: 50vh;
+    background-color: #ddd;
 }
 
 #header-text h3{
     font-weight: 600;
     font-size: 40px;
-    padding: 150px 0 30px 0; 
+    padding: 100px 0 50px 0; 
     position: relative;
     justify-content: center;
     align-items: center;
 }
 #header-text h3::after{
     content: "";
-    border-bottom: 4px solid rgb(85, 83, 83);
+    border-bottom: 4px solid rgb(158, 12, 12);
     display: block;
     width: 80px;
     margin-left: 48.2%; margin-right: 50%;
@@ -274,7 +274,8 @@ header .text-uppercase{
     flex-direction: column;
     flex: 1;
     border-right: 0.6px solid;
-    height: 100vh;  
+    height: 100vh;
+    width: 100%;
 }
 
 
@@ -469,13 +470,12 @@ header .text-uppercase{
     }
 }
 
-@media (min-width: 767px) and (max-width: 880px){
+@media (max-width: 880px){
     .sidemenu .border-bottom{
-        width: 360px;
+        width: 400px;
     }
     .sidemenu{
         justify-content: center;
-        padding-top: 100px;
         list-style: none; 
         padding-bottom: 28px;
         display: flex;
@@ -484,22 +484,61 @@ header .text-uppercase{
         width: 100%;
     }
     #vertical-menu .content{
-        overflow-y: hidden;
         width: 100%;
-        height: auto;
-        margin-top: 40px;
+        height: 100vh;
+    }
+    #vertical-menu .container-fluid{
+        display: flex;
+    }
+   
+    #vertical-menu ul{
+        padding-left: 6rem;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 870px){
+    #vertical-menu ul{
+        padding-left: 3rem;
+    } 
+    .sidemenu .border-bottom{
+        width: 200px;
+    }
+    .menu-item_title-container{
+        width: 40%;
+    }
+}
+
+@media (max-width: 740px){
+    .sidemenu .border-bottom{
+        width: 300px;
     }
     #vertical-menu .container-fluid{
         display: block;
     }
+    #vertical-menu .content{
+        margin-top: 50px;
+        overflow: hidden;
+        height: auto;
+    }
     .menu-item_title-container{
-        width: 59%;
+        width: 55%;
     }
     #vertical-menu ul{
-        padding-left: 9rem;
-    }
+        padding-left: 6rem;
+    } 
 }
 
+@media (max-width: 546px){
+    .sidemenu .border-bottom{
+        width: 250px;
+    }
+    #vertical-menu ul{
+        padding-left: 4rem;
+    } 
+    .menu-item_title-container{
+        width: 79%;
+    }
+}
 
 /*footer starts here*/
 footer {
