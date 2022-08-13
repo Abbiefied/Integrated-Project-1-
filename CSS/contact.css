@@ -70,12 +70,14 @@ nav a {
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.696);
+  width: 450px;
 }
 .page h1{
   font-size: 60px;
   font-family:'Roboto' ;
   font-weight: 100;
-  color: rgb(32, 66, 167);
+  color: rgb(158, 12, 12);
 }  
 
   .contact-in iframe{
