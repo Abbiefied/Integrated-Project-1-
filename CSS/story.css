@@ -11,6 +11,10 @@ body{
     overflow-x: hidden !important;
 }
 
+:root{
+    overflow-x:hidden
+    }
+
 /*nav  section starts here*/
 nav a {
     text-decoration: none;
