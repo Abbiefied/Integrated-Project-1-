@@ -34,6 +34,7 @@ nav a {
     border-radius: 10px;
     border-color: rgb(203, 203, 238);
     background-color: rgb(158, 12, 12);
+    text-align: center;
   }
   
   nav .active {
@@ -220,6 +221,7 @@ header .text-uppercase{
 
 
 /**header-text section starts here**/
+
 #header-text{
     color:#333;
     height: 50vh;
@@ -346,9 +348,9 @@ header .text-uppercase{
 }
 
 #vertical-menu .content{
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 60px;
-    width: 85%;
+    width: 90%;
     word-wrap: break-word;
     height: 100vh;
     overflow-y: scroll;
@@ -396,10 +398,13 @@ header .text-uppercase{
 
 
 /**icons styles starts here**/
+.icons{
+   display: flex;
+   justify-content: center;
+}
 .icons ul{
-    margin-left: 38%;
-    margin-right: 50%;
      display: flex;  
+     padding-left: 0;
 } 
 .icons ul li{
     list-style: none;
@@ -484,43 +489,59 @@ header .text-uppercase{
     .content-wrapper .row #col2 div{
         margin-top: 3.5pc;
     }
-}
-
-@media (max-width: 912px){
-    .content-wrapper .row #col1 img{
-        margin-left: 0;
-        height: 36rem;
+    #vertical-menu #col1{
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    #vertical-menu #col2{
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    #vertical-menu #col3{
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    #vertical-menu #col4{
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    #background p, #alu p, #experience p, 
+    #social p, #ideas p{
+        width: 100% !important;
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 912px){
+    .content-wrapper{
+        padding: 100px 80px 50px 80px;
+    }
+    .content-wrapper .row #col1 img{
+        margin-left: 0;
+        height: 38rem;
+    }
+    .content-wrapper .row #col2 div{
+        margin-left: 25px;
+    }
+    
+}
+
+@media (max-width: 576px){
     .content-wrapper{
         padding: 100px 50px 50px 50px;
     }
     .content-wrapper .row #col1 img{
-          height: 27rem;
+          height: 28rem;
     }
+   
+    
 }
-  /********** Super extra small devices Only :-) (e.g., iPhone 4) starts here **********/
-@media (max-width: 490px){
-    .content-wrapper{
-        padding: 100px 20px 50px 20px;
-    }
-    .content-wrapper .row #col1 img{
-          height: 21rem;
-    }
-}
-
-@media (max-width: 280px){
-    .content-wrapper .row #col1 img{
-        height: 15rem;
-  } 
-}
-/********** Super extra small devices Only :-) (e.g., iPhone 4) ends here **********/
+  
 @media (max-width: 1270px){
     .sidemenu .border-bottom{
         width: 300px;
     }
+   
+    
 }
 
 @media (min-width: 879px) and (max-width: 1103px){
@@ -530,6 +551,7 @@ header .text-uppercase{
     .sidemenu .border-bottom{
         width: 260px;
     }
+    
 }
 
 @media (max-width: 880px){
@@ -571,6 +593,9 @@ header .text-uppercase{
 }
 
 @media (max-width: 740px){
+    .sidemenu{
+        height: 85vh;
+    }
     .sidemenu .border-bottom{
         width: 300px;
     }
@@ -587,7 +612,8 @@ header .text-uppercase{
     }
     #vertical-menu ul{
         padding-left: 6rem;
-    } 
+    }
+    
 }
 
 @media (max-width: 546px){
@@ -595,12 +621,46 @@ header .text-uppercase{
         width: 250px;
     }
     #vertical-menu ul{
-        padding-left: 4rem;
+        padding-left: 3rem;
     } 
     .menu-item_title-container{
         width: 79%;
     }
+    #vertical-menu .content li{
+      padding-right: 55px;
+    }
+    
 }
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) starts here **********/
+@media (max-width: 490px){
+    .content-wrapper{
+        padding: 100px 20px 50px 20px;
+    }
+    .content-wrapper .row #col1 img{
+          height: 22rem;
+    }
+    #vertical-menu ul{
+        padding-left: 1rem;
+      }
+}
+
+@media (max-width: 280px){
+    .content-wrapper .row #col1 img{
+        height: 15rem;
+  } 
+  .sidemenu .border-bottom{
+    width: 220px;
+   }
+  
+  .content img{
+   height: 14rem !important;
+  }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) ends here **********/
+
+
 /*media query for responsiveness ends here*/
 
 /*footer starts here*/
