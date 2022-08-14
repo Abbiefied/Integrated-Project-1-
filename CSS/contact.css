@@ -139,6 +139,7 @@ main{
   top: 50%;
   transform: translateY(-50%);
   background: #afafb6;
+ 
 }
 .content .left-side .details{
   margin: 14px;
@@ -147,32 +148,38 @@ main{
 .content .left-side .details i{
   font-size: 30px;
   color: rgb(158, 12, 12);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+ 
 }
 .content .left-side .details .topic{
   font-size: 18px;
   font-weight: 500;
+  
 }
 .content .left-side .details .text-one,
 .content .left-side .details .text-two{
   font-size: 14px;
   color: #afafb6;
+  
 }
 
 .webform .content .right-side{
   width: 75%;
   margin-left: 75px;
+  
 }
 .webform .right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
   color:rgb(158, 12, 12);
+ 
   
 }
 .right-side .input-box{
   height: 50px;
   width: 100%;
   margin: 12px 0;
+ 
 }
 .right-side .input-box input,
 .right-side .input-box textarea{
