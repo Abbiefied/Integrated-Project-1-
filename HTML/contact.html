@@ -4,6 +4,7 @@
     <!--  meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0114/1220.js" async="async"></script>
     <link rel="stylesheet" href="../CSS/contact.css">
 
     <!-- Bootstrap CSS -->
@@ -39,18 +40,18 @@
               Our Stories
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="ayishat.html#disqus_thread">Ayishatu Saeed</a></li>
-              <li><a class="dropdown-item" href="christiana.html#disqus_thread">Christiana Ola</a></li>
+              <li><a class="dropdown-item" href="ayishat.html">Ayishatu Saeed</a></li>
+              <li><a class="dropdown-item" href="christiana.html">Christiana Ola</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="funke.html#disqus_thread">Funke Aderoju</a></li>
-              <li><a class="dropdown-item" href="ganiyat.html#disqus_thread">Ganiyat Adekunle</a></li>
+              <li><a class="dropdown-item" href="funke.html">Funke Aderoju</a></li>
+              <li><a class="dropdown-item" href="ganiyat.html">Ganiyat Adekunle</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="mary.html#disqus_thread">Mary Odeh</a></li>
-              <li><a class="dropdown-item" href="yvette.html#disqus_thread">Yvette Tuyambaze</a></li>
+              <li><a class="dropdown-item" href="mary.html">Mary Odeh</a></li>
+              <li><a class="dropdown-item" href="yvette.html">Yvette Tuyambaze</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -72,7 +73,6 @@
             </div>
         </div>
              
-     </div> 
      <main>
      <div class="webform ">
       <div class="content">
@@ -102,23 +102,28 @@
          
         
           <div class="input-box">
-            <input type="text" placeholder="name" required>
+            <input type="text" placeholder="Name" id="name">
           </div>
           <div class="input-box">
-            <input type="text" placeholder=" email" required >
+            <input type="text" placeholder=" Email" id="email" >
           </div>
 
           <div class="input-box">
-            <input type="text" placeholder=" subject" required>
+            <input type="text" placeholder=" Subject" id="subject">
           </div>
           
           <div class="input-box message-box">
-            <textarea placeholder=" message"></textarea>
+            <textarea id="msg" placeholder=" Message"></textarea>
           </div>
           <div class="button">
-            <input type="button" value="submit" >
+            <button id="send" onclick="message()">send</button> 
           </div>
+          <div class="message">
+            <div class="success" id="success">Your Message Has Been Successful!</div>
+            <div class="danger" id="danger">Fields Cant be Empty!</div>
 
+          </div>
+          <script src="contact.js"></script>
          </form>
         </div>
          
@@ -151,22 +156,22 @@
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Quick links</h5>
         <p style="margin: 0;">
-          <a href="mary.html#disqus_thread" class="text-white" style="text-decoration: none;">Mary Odeh</a>
+          <a href="mary.html" class="text-white" style="text-decoration: none;">Mary Odeh</a>
         </p>
         <p style="margin: 0;">
-          <a href="christiana.html#disqus_thread" class="text-white" style="text-decoration: none;">Christiana Ola</a>
+          <a href="christiana.html" class="text-white" style="text-decoration: none;">Christiana Ola</a>
         </p>
         <p style="margin: 0;">
-          <a href="funke.html#disqus_thread" class="text-white" style="text-decoration: none;">Funke Aderoju</a>
+          <a href="funke.html" class="text-white" style="text-decoration: none;">Funke Aderoju</a>
         </p>
         <p style="margin: 0;">
-          <a href="ayishat.html#disqus_thread" class="text-white" style="text-decoration: none;">Ayishatu Saeed</a>
+          <a href="ayishat.html" class="text-white" style="text-decoration: none;">Ayishatu Saeed</a>
         </p>
         <p style="margin: 0;">
-          <a href="ganiyat.html#disqus_thread" class="text-white" style="text-decoration: none;">Ganiyat Adekunle</a>
+          <a href="ganiyat.html" class="text-white" style="text-decoration: none;">Ganiyat Adekunle</a>
         </p>
         <p style="margin: 0;">
-          <a href="yvette.html#disqus_thread" class="text-white" style="text-decoration: none;">Yvette Tuyambaze</a>
+          <a href="yvette.html" class="text-white" style="text-decoration: none;">Yvette Tuyambaze</a>
         </p>
       </div>
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -213,7 +218,7 @@
 
           <ul class="list-unstyled list-inline">
             <li class="list-inline-item">
-              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+              <a href="https://www.facebook.com/102034579294518/posts/102035352627774/?d=n&substory_index=0" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
                   class="fab fa-facebook"></i></a>
             </li>
             <li class="list-inline-item">
@@ -225,12 +230,8 @@
                   class="fab fa-google-plus"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+              <a href="https://www.linkedin.com/in/the-phenomenal-women-undefined-2b8640248" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
                   class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                  class="fab fa-youtube"></i></a>
             </li>
           </ul>
         </div>

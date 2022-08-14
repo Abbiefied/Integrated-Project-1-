@@ -11,6 +11,10 @@ body{
     overflow-x: hidden !important;
 }
 
+:root{
+    overflow-x:hidden
+    }
+
 /*nav  section starts here*/
 nav a {
     text-decoration: none;
@@ -662,6 +666,14 @@ header .text-uppercase{
 
 
 /*media query for responsiveness ends here*/
+
+#disqus_thread{
+    padding: 20px;
+    margin: 90px;
+    border: 3px solid #999;
+    border-radius: 5px;
+
+}
 
 /*footer starts here*/
 footer {

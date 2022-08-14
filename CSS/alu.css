@@ -1,3 +1,6 @@
+:root{
+  overflow-x: hidden;
+}
 body{
   overflow-x: hidden;
 }
@@ -180,21 +183,21 @@ h1{
   .rounded-float-start{
     width: 40%;
     margin-left:23px;
-    margin-top: 65%;
-    height: 200px;
+    margin-top: 80%;
+    height: 150px;
     margin-right: 0px;
   }
   .rounded-float-end{
     width: 40%;
     margin-left: 10px;
-    margin-top: 65%;
-    height: 200px;
+    margin-top: 80%;
+    height: 150px;
 
   }
   .rounded-float-start1{
     width: 40%;
     margin-left:10px;    
-    height: 200px;
+    height: 150px;
     margin-left:23px;
     margin-right: 0px;
 
@@ -203,10 +206,10 @@ h1{
     width: 40%;
     margin-left: 10px;
     margin-top: 5px;
-    height: 200px;
+    height: 150px;
   }
   .header{
-    height: 150vh;
+    height: 125vh;
   }
   .background-color{
     background-color: #DBF9FC;
