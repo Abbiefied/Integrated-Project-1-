@@ -620,6 +620,8 @@ header .text-uppercase{
     }
     .content img{
         height: 13rem !important;
+        justify-content: center;
+        display: flex;
     }
     
 }
