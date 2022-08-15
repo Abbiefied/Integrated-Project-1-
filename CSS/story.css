@@ -75,7 +75,7 @@ header .text-uppercase{
 	background-image: url("../Images/img3.jpg");	
 }
 #introganiyat{
-	background-image: url("../Images/ganiyat copy.JPG");	
+	background-image: url("../Images/ganiyatcopy.JPG");	
 }
 #introayishatu{
 	background-image: url("../Images/IMG-0766.jpg");
@@ -258,7 +258,7 @@ header .text-uppercase{
 /** sidemenu starts here**/
 
 #vertical-menu{
-    height: 110vh;
+    height: auto;
     --top-offset: 10px;
     width: 100%;
     background: #f4f4f4;
@@ -283,7 +283,7 @@ header .text-uppercase{
     flex-direction: column;
     flex: 1;
     border-right: 0.6px solid;
-    height: 110vh;
+    height: 108.5vh;
     width: 100%;
 }
 
