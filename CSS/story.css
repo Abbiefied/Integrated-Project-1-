@@ -283,7 +283,7 @@ header .text-uppercase{
     flex-direction: column;
     flex: 1;
     border-right: 0.6px solid;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
 }
 
