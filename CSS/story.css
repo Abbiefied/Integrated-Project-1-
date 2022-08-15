@@ -457,19 +457,28 @@ header .text-uppercase{
 
 /*media query for responsiveness starts here*/
 
-@media (max-width: 768px) {
-    /*for intro class*/
+/********** Super extra large devices Only starts here **********/
 
-    .intro .container-fluid .text{
+@media (max-width: 1290px) {
+    .content-wrapper{
+        padding: 100px 80px 50px 80px;
+    }
+    .content-wrapper .row #col1 img{
         margin-left: 20px;
+        height: 30rem;
     }
-    .intro .container-fluid .text h1{
-        font-size: 40px;
-    }
-    .intro .container-fluid .text h5{
-        font-size: 15px;
+    .content-wrapper .row #col2 div{
+        margin-top: 4pc;
     }
 }
+
+@media (max-width: 1270px){
+    .sidemenu .border-bottom{
+        width: 300px;
+    }   
+}
+/********** Super extra large devices Only ends here **********/
+
 
 /********** large devices Only starts here **********/
 @media (max-width: 1090px) {
@@ -498,7 +507,7 @@ header .text-uppercase{
         width: 100% !important;
     }
 }
-/********** Super extra large devices Only ends here **********/
+
 
 @media (max-width: 912px){
     .content-wrapper{
@@ -511,25 +520,6 @@ header .text-uppercase{
     .content-wrapper .row #col2 div{
         margin-left: 25px;
     }
-    
-}
-
-@media (max-width: 576px){
-    .content-wrapper{
-        padding: 100px 50px 50px 50px;
-    }
-    .content-wrapper .row #col1 img{
-          height: 28rem;
-    }
-   
-    
-}
-  
-@media (max-width: 1270px){
-    .sidemenu .border-bottom{
-        width: 300px;
-    }
-   
     
 }
 
@@ -568,7 +558,9 @@ header .text-uppercase{
         padding-left: 6rem;
     }
 }
+/********** large devices Only ends here **********/
 
+/********** medium devices Only starts here **********/
 @media (min-width: 740px) and (max-width: 870px){
     #vertical-menu ul{
         padding-left: 3rem;
@@ -580,6 +572,21 @@ header .text-uppercase{
         width: 40%;
     }
 }
+
+@media (max-width: 768px) {
+    /*for intro class*/
+
+    .intro .container-fluid .text{
+        margin-left: 20px;
+    }
+    .intro .container-fluid .text h1{
+        font-size: 40px;
+    }
+    .intro .container-fluid .text h5{
+        font-size: 15px;
+    }
+}
+
 
 @media (max-width: 740px){
     .sidemenu{
@@ -604,6 +611,21 @@ header .text-uppercase{
     }
     
 }
+/********** medium devices Only ends here **********/
+
+/********** small devices Only starts here **********/
+
+@media (max-width: 576px){
+    .content-wrapper{
+        padding: 100px 50px 50px 50px;
+    }
+    .content-wrapper .row #col1 img{
+          height: 28rem;
+    }
+   
+    
+}
+
 
 @media (max-width: 546px){
     .sidemenu .border-bottom{
@@ -622,9 +644,9 @@ header .text-uppercase{
         height: 13rem !important;
         justify-content: center;
         display: flex;
-    }
-    
+    }  
 }
+/********** small devices Only ends here **********/
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) starts here **********/
 @media (max-width: 490px){
