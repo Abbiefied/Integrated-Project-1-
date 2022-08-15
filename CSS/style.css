@@ -60,12 +60,13 @@ nav a {
     background-color: #fff;
 }
 
-.collapse img {
-    margin-left: 350px;
-}
+#placehead {
+    margin:auto;
+  }
 
 .nav-link {
     margin: 10px;
+    text-align: center;
     transition: all 0.3s ease;
     border-style: ridge;
     border-radius: 10px;
@@ -230,3 +231,35 @@ footer {
     opacity: 1;
     display: block;
 }
+
+  /*media queries*/
+  @media (min-width: 768px) {
+    #placehead{
+      margin-left: 350px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #placehead{
+      margin-left: 350px;
+    }
+  
+  }
+  
+  @media (min-width: 1200px) {
+    #placehead{
+      margin-left: 350px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    #placehead{
+      margin-left: 350px;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    #placehead{
+      margin-left: 350px;
+    }
+  }
