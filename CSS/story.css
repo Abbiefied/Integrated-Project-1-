@@ -641,7 +641,7 @@ header .text-uppercase{
       padding-right: 55px;
     }
     .content img{
-        height: 13rem !important;
+        height: 15rem !important;
         justify-content: center;
         display: flex;
     }  
@@ -663,7 +663,7 @@ header .text-uppercase{
         padding-left: 2rem;
     }
       .content img{
-        height: 10.4rem !important;
+        height: 12.4rem !important;
     }
 }
 
