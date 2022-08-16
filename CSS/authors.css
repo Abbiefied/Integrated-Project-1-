@@ -142,6 +142,13 @@ nav a {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .steps_section-thumbnail {
+    height: auto;
+  }
+}
+
+
 /*footer starts here*/
 footer {
   background: rgb(14, 14, 95);
