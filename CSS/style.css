@@ -95,7 +95,7 @@ nav a {
 }
 
 .carousel-item img {
-    height: 300px;
+    height: 200px;
     width: 100%;
     object-fit: cover;
 }
@@ -237,18 +237,26 @@ footer {
     #placehead{
       margin-left: 350px;
     }
+    .carousel-item img {
+        height: 300px;
+    }
   }
   
   @media (min-width: 992px) {
     #placehead{
       margin-left: 350px;
     }
-  
+    .carousel-item img {
+        height: 300px;
+    }
   }
   
   @media (min-width: 1200px) {
     #placehead{
       margin-left: 350px;
+    }
+    .carousel-item img {
+        height: 300px;
     }
   }
   
@@ -256,10 +264,16 @@ footer {
     #placehead{
       margin-left: 350px;
     }
+    .carousel-item img {
+        height: 300px;
+    }
   }
   
   @media (min-width: 1600px) {
     #placehead{
       margin-left: 350px;
+    }
+    .carousel-item img {
+        height: 300px;
     }
   }
