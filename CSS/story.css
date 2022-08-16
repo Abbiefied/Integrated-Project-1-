@@ -684,8 +684,8 @@ header .text-uppercase{
 /*media query for responsiveness ends here*/
 
 #disqus_thread{
-    padding: 20px;
-    margin: 90px;
+    padding: 5px;
+    margin: 10px;
     border: 3px solid #999;
     border-radius: 5px;
 
@@ -743,6 +743,10 @@ footer {
     #placehead{
       margin-left: 350px;
     }
+    #disqus_thread{
+        padding: 15px;
+        margin: 85px;
+    }
   }
   
   @media (min-width: 992px) {
@@ -750,11 +754,20 @@ footer {
       margin-left: 350px;
     }
   
+    #disqus_thread{
+        padding: 20px;
+        margin: 90px;
+    }
   }
   
   @media (min-width: 1200px) {
     #placehead{
       margin-left: 350px;
+    }
+
+    #disqus_thread{
+        padding: 20px;
+        margin: 90px;
     }
   }
   
@@ -762,10 +775,20 @@ footer {
     #placehead{
       margin-left: 350px;
     }
+
+    #disqus_thread{
+        padding: 20px;
+        margin: 90px;
+    }
   }
   
   @media (min-width: 1600px) {
     #placehead{
       margin-left: 350px;
+    }
+
+    #disqus_thread{
+        padding: 20px;
+        margin: 90px;
     }
   }
